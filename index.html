@@ -7,9 +7,9 @@
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-:root{--bg:#f4f6f5;--card:#fff;--side:#0c2524;--side-active:#0d7377;--side-hover:rgba(255,255,255,.05);--border:#dde3e0;--text:#1a2e2e;--text2:#5a706e;--text3:#8a9e9c;--green:#0d7377;--green-bg:#e0f5f5;--red:#9b4d5a;--red-bg:#fce8ec;--amber:#4e7d96;--amber-bg:#e4eff6;--blue:#4e7d96;--blue-bg:#e4eff6;--teal:#1bc5c5;--purple:#3a3a3c;--purple-bg:#ededee;--gold:#4e7d96}
+:root{--bg:#f4f6f5;--card:#fff;--side:#0c2524;--side-active:#0ea5e9;--side-hover:rgba(255,255,255,.05);--border:#dde3e0;--text:#0f172a;--text2:#5a706e;--text3:#94a3b8;--green:#0ea5e9;--green-bg:#e0f5f5;--red:#ef4444;--red-bg:#fce8ec;--amber:#3b82f6;--amber-bg:#e4eff6;--blue:#3b82f6;--blue-bg:#e4eff6;--teal:#38bdf8;--purple:#334155;--purple-bg:#ededee;--gold:#3b82f6}
 body{font-family:'IBM Plex Sans Arabic',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;display:flex}
-.sidebar{width:250px;background:linear-gradient(180deg,#0d6e6e 0%,#0d7377 25%,#4e7d96 65%,#3a3a3c 100%);color:#c0e8e6;display:flex;flex-direction:column;position:fixed;top:0;right:0;bottom:0;z-index:50;overflow-y:auto;scrollbar-width:none}
+.sidebar{width:250px;background:linear-gradient(180deg,#0f172a 0%,#0f172a 40%,#1e293b 100%);color:#94a3b8;display:flex;flex-direction:column;position:fixed;top:0;right:0;bottom:0;z-index:50;overflow-y:auto;scrollbar-width:none}
 .sidebar::-webkit-scrollbar{display:none}
 .logo-area{padding:2rem 1.5rem 1rem;text-align:center}
 .logo-emblem{width:180px;height:auto;margin:0 auto 1rem}
@@ -20,8 +20,8 @@ body{font-family:'IBM Plex Sans Arabic',sans-serif;background:var(--bg);color:va
 .logo-title-en{display:none}
 
 .nav{padding:.35rem 0;flex:1}
-.nav-item{padding:.7rem 1.1rem;margin:1px .65rem;font-size:13.5px;cursor:pointer;display:flex;align-items:center;justify-content:flex-end;gap:10px;transition:all .18s;color:#c0e8e6;border-radius:10px;font-weight:400;direction:rtl}
-.nav-item:hover{background:rgba(255,255,255,.08);color:#ffffff}
+.nav-item{padding:.7rem 1.1rem;margin:1px .65rem;font-size:13.5px;cursor:pointer;display:flex;align-items:center;justify-content:flex-end;gap:10px;transition:all .18s;color:#94a3b8;border-radius:10px;font-weight:400;direction:rtl}
+.nav-item:hover{background:rgba(14,165,233,.15);color:#ffffff}
 .nav-item.active{background:rgba(255,255,255,.15);color:#fff;font-weight:600;box-shadow:0 2px 12px rgba(0,0,0,.15);backdrop-filter:blur(4px);border:1px solid rgba(255,255,255,.12)}
 .nav-item .nav-label{flex:1;text-align:right}
 .nav-item .nav-icon{width:18px;height:18px;opacity:.45;flex-shrink:0;stroke:currentColor}
@@ -44,8 +44,8 @@ body{font-family:'IBM Plex Sans Arabic',sans-serif;background:var(--bg);color:va
 .kpi-val{font-size:30px;font-weight:700;line-height:1.1}
 .kpi-note{font-size:10.5px;color:var(--text3);margin-top:5px}
 .section{background:var(--card);border-radius:14px;border:1px solid #d5ddd9;margin-bottom:1.25rem;overflow:hidden;box-shadow:0 1px 4px rgba(13,115,119,.04)}
-.section-head{padding:1rem 1.5rem;border-bottom:1px solid #e5ebe8;display:flex;align-items:center;justify-content:space-between}
-.section-title{font-size:15px;font-weight:700;color:#1a2e2e;letter-spacing:-.2px}
+.section-head{padding:1rem 1.5rem;border-bottom:1px solid #e2e8f0;display:flex;align-items:center;justify-content:space-between}
+.section-title{font-size:15px;font-weight:700;color:#0f172a;letter-spacing:-.2px}
 .section-sub{font-size:11px;color:var(--text3)}
 .section-body{padding:1.25rem 1.5rem}
 .ind-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px 48px}
@@ -59,25 +59,25 @@ body{font-family:'IBM Plex Sans Arabic',sans-serif;background:var(--bg);color:va
 .bar-green{background:var(--green)}
 .bar-red{background:var(--red)}
 .bar-amber{background:var(--amber)}
-.bar-blue{background:#4e7d96}
+.bar-blue{background:#3b82f6}
 .bar-teal{background:var(--teal)}
 .bar-purple{background:var(--purple)}
 table{width:100%;border-collapse:separate;border-spacing:0;font-size:12.5px}
 th{background:#f5f8f7;padding:11px 14px;font-weight:600;text-align:right;color:#3a5856;white-space:nowrap;border-bottom:2px solid #c8d5d0;font-size:10.5px;letter-spacing:.01em}
 td{padding:11px 14px;border-bottom:1px solid #f3f4f6;text-align:right;white-space:nowrap;font-size:12px;color:#1f2937}
-tr:hover td{background:#f0f8f8}
+tr:hover td{background:#e0f2fe}
 .pill{display:inline-block;padding:3px 12px;border-radius:12px;font-size:11px;font-weight:600}
-.pill-q1{background:#e0f5f5;color:#0d7377}
-.pill-q2{background:#e4eff6;color:#4e7d96}
-.pill-q3{background:#e0fafa;color:#0e9e9e}
-.pill-q4{background:#ededee;color:#3a3a3c}
+.pill-q1{background:#e0f5f5;color:#0ea5e9}
+.pill-q2{background:#e4eff6;color:#3b82f6}
+.pill-q3{background:#e0fafa;color:#0ea5e9}
+.pill-q4{background:#ededee;color:#334155}
 
 .score-badge{display:inline-flex;align-items:center;justify-content:center;width:38px;height:30px;border-radius:8px;font-weight:700;font-size:14px;color:white}
 .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-left:4px}
 .check{color:var(--green);font-weight:700}
 .cross{color:var(--red);font-weight:700}
 .mdi-bar{width:60px;height:7px;border-radius:4px;background:#e5e7eb;display:inline-block;vertical-align:middle;margin-left:6px;overflow:hidden}
-.mdi-bar-fill{height:100%;border-radius:4px;background:#0d7377}
+.mdi-bar-fill{height:100%;border-radius:4px;background:#0ea5e9}
 .tab-row{display:flex;gap:2px;padding:.5rem 1.5rem 0;background:var(--card);border-bottom:1px solid var(--border)}
 .tab-btn{padding:.6rem 1.25rem;font-size:12.5px;font-weight:600;cursor:pointer;border:none;background:transparent;color:var(--text2);border-bottom:2px solid transparent;font-family:inherit;transition:all .15s}
 .tab-btn:hover{color:var(--text)}
@@ -89,10 +89,10 @@ tr:hover td{background:#f0f8f8}
 .demand-table td{padding:10px 10px;text-align:center;font-size:12px;border-bottom:1px solid #f3f4f6}
 .demand-table td:nth-child(2){text-align:right;font-weight:600;color:#111827}
 .demand-table td:nth-child(3){text-align:right;font-size:11px;color:#6b7280}
-.demand-table tr:hover td{background:#f0f8f8}
+.demand-table tr:hover td{background:#e0f2fe}
 .demand-table tbody tr:last-child td{border-bottom:none}
 .desc-row td{padding:6px 10px !important;white-space:normal;line-height:1.4;text-align:center;font-size:9.5px !important;color:#9ca3af !important;font-style:italic;background:#fafbfc !important;border-bottom:2px solid #e5e7eb !important}
-.wf-n{padding:7px 10px;border-radius:8px;background:#fff;border:1px solid #dce5e3;position:relative}
+.wf-n{padding:7px 10px;border-radius:8px;background:#fff;border:1px solid #e2e8f0;position:relative}
 .wf-n.wf-f{border-color:rgba(13,115,119,.1);background:rgba(13,115,119,.01)}
 .gate-col{background:rgba(13,115,119,.02)}
 .factor-col{background:rgba(13,115,119,.02)}
@@ -101,7 +101,7 @@ tr:hover td{background:#f0f8f8}
 .supply-table td{padding:10px 10px;text-align:center;font-size:12px;border-bottom:1px solid #f3f4f6}
 .supply-table td:nth-child(2){text-align:right;font-weight:600;color:#111827}
 .supply-table td:nth-child(3){text-align:right;font-size:11px;color:#6b7280}
-.supply-table tr:hover td{background:#f0f8f8}
+.supply-table tr:hover td{background:#e0f2fe}
 .supply-table tbody tr:last-child td{border-bottom:none}
 .matrix-tooltip{position:absolute;z-index:30;background:var(--card);border:1px solid var(--border);border-radius:10px;padding:12px 14px;box-shadow:0 8px 24px rgba(0,0,0,.12);pointer-events:none;min-width:220px;max-width:280px;direction:rtl;font-size:12px;opacity:0;transition:opacity .15s}
 .matrix-tooltip.show{opacity:1}
@@ -122,7 +122,7 @@ tr:hover td{background:#f0f8f8}
 .step-card{min-height:85px;display:flex;flex-direction:column;justify-content:flex-start}
 .footer-note{text-align:center;font-size:10.5px;color:var(--text3);padding:1.5rem 0 .5rem}
 @media(max-width:1100px){
-.sidebar{width:64px;background:linear-gradient(180deg,#0d6e6e 0%,#0d7377 25%,#4e7d96 65%,#3a3a3c 100%)}.sidebar .logo-title,.sidebar .logo-title-en,.sidebar .nav-label,.sidebar .side-search,.sidebar .side-footer,.sidebar .side-tool-title{display:none}.sidebar .nav-item{justify-content:center;padding:.7rem;margin:2px .5rem}.sidebar .logo-area{padding:1rem .5rem}.sidebar .logo-emblem{width:40px}.main{margin-right:64px;padding:1rem}
+.sidebar{width:64px;background:linear-gradient(180deg,#0f172a 0%,#0f172a 40%,#1e293b 100%)}.sidebar .logo-title,.sidebar .logo-title-en,.sidebar .nav-label,.sidebar .side-search,.sidebar .side-footer,.sidebar .side-tool-title{display:none}.sidebar .nav-item{justify-content:center;padding:.7rem;margin:2px .5rem}.sidebar .logo-area{padding:1rem .5rem}.sidebar .logo-emblem{width:40px}.main{margin-right:64px;padding:1rem}
 .kpi-row{grid-template-columns:repeat(2,1fr)}.ind-grid{grid-template-columns:1fr}
 }
 </style>
@@ -145,15 +145,15 @@ tr:hover td{background:#f0f8f8}
 <span class="nav-label">المنهجية</span>
 <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 01-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
 </div>
-<!-- 1b. مصفوفة الأولويات -->
-<div class="nav-item" onclick="switchTab('matrix',this)">
-<span class="nav-label">مصفوفة الأولويات</span>
-<svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="12" y1="2" x2="12" y2="22"/></svg>
-</div>
 <!-- 2. لوحة المعلومات -->
 <div class="nav-item" onclick="switchTab('overview',this)">
 <span class="nav-label">لوحة المعلومات</span>
 <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="3" y="3" width="7.5" height="7.5" rx="1.5"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="1.5"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="1.5"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1.5"/></svg>
+</div>
+<!-- 3. ترتيب الأولويات -->
+<div class="nav-item" onclick="switchTab('matrix',this)">
+<span class="nav-label">ترتيب الأولويات</span>
+<svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.8"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="15" y2="12"/><line x1="3" y1="18" x2="9" y2="18"/></svg>
 </div>
 <!-- 4. جانب الطلب -->
 <div class="nav-item" onclick="switchTab('demand',this)">
@@ -175,15 +175,14 @@ tr:hover td{background:#f0f8f8}
 <span class="nav-label">بطاقة البرنامج</span>
 <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="2" y="3" width="20" height="18" rx="2"/><line x1="2" y1="8" x2="22" y2="8"/><line x1="8" y1="8" x2="8" y2="21"/></svg>
 </div>
-
-</div>
-
-<div class="side-footer">
-<div class="nav-item" style="cursor:default">
+<!-- 8. سياسة الاستخدام -->
+<div class="nav-item" onclick="switchTab('governance',this)" style="margin-top:auto">
 <span class="nav-label">سياسة الاستخدام</span>
 <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
 </div>
+
 </div>
+
 </div>
 
 <div class="main">
@@ -192,18 +191,18 @@ tr:hover td{background:#f0f8f8}
 
 <!-- ===================== COVER TAB ===================== -->
 <div class="tab-content active" id="tab-cover">
-<div style="position:relative;border-radius:0;overflow:hidden;min-height:100vh;background:#0d7377;display:flex;align-items:center;justify-content:center;text-align:center;color:white;padding:3rem">
+<div style="position:relative;border-radius:0;overflow:hidden;min-height:100vh;background:#0f172a;display:flex;align-items:center;justify-content:center;text-align:center;color:white;padding:3rem">
 <!-- Layered backgrounds -->
-<div style="position:absolute;inset:0;background:linear-gradient(170deg,#0d6e6e 0%,#0d7377 30%,#4e7d96 70%,#3a3a3c 100%);opacity:.95"></div>
+<div style="position:absolute;inset:0;background:linear-gradient(170deg,#0f172a 0%,#1e293b 35%,#0f172a 65%,#1e293b 100%);opacity:.95"></div>
 <div style="position:absolute;inset:0;opacity:.03;background-image:url('data:image/svg+xml,%3Csvg width=60 height=60 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Ccircle cx=30 cy=30 r=1 fill=%27%23fff%27/%3E%3C/svg%3E')"></div>
-<div style="position:absolute;top:-30%;left:-20%;width:80%;height:100%;background:radial-gradient(circle,#1bc5c515 0%,transparent 60%);pointer-events:none"></div>
-<div style="position:absolute;bottom:-20%;right:-10%;width:60%;height:80%;background:radial-gradient(circle,#aed4a010 0%,transparent 60%);pointer-events:none"></div>
+<div style="position:absolute;top:-30%;left:-20%;width:80%;height:100%;background:radial-gradient(circle,#38bdf815 0%,transparent 60%);pointer-events:none"></div>
+<div style="position:absolute;bottom:-20%;right:-10%;width:60%;height:80%;background:radial-gradient(circle,#10b98110 0%,transparent 60%);pointer-events:none"></div>
 <div style="position:relative;z-index:1;max-width:640px">
-<div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;opacity:.35;margin-bottom:2.5rem">Workstream A · أبريل 2026</div>
+<div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;opacity:.35;margin-bottom:2.5rem">أبريل 2026</div>
 <div style="font-size:12px;opacity:.4;margin-bottom:1rem;font-weight:300">المؤسسة العامة للتدريب التقني والمهني</div>
 <h1 style="font-size:38px;font-weight:800;line-height:1.4;margin-bottom:.5rem;letter-spacing:-.5px">أداة تحديد أولويات</h1>
-<h1 style="font-size:38px;font-weight:800;line-height:1.4;margin-bottom:2rem;letter-spacing:-.5px;background:linear-gradient(135deg,#aed4a0,#1bc5c5);-webkit-background-clip:text;-webkit-text-fill-color:transparent">البرامج التدريبية الجديدة</h1>
-<p style="font-size:14px;opacity:.5;line-height:2;margin-bottom:3rem;max-width:480px;margin-left:auto;margin-right:auto;font-weight:300">تقييم البرامج المرشحة وفق مؤشرات الطلب في سوق العمل وجاهزية العرض التدريبي لتحديد أولويات الإطلاق</p>
+<h1 style="font-size:38px;font-weight:800;line-height:1.4;margin-bottom:2rem;letter-spacing:-.5px;background:linear-gradient(135deg,#10b981,#38bdf8);-webkit-background-clip:text;-webkit-text-fill-color:transparent">البرامج التدريبية الجديدة</h1>
+<p style="font-size:14px;opacity:.5;line-height:2;margin-bottom:3rem;max-width:480px;margin-left:auto;margin-right:auto;font-weight:300">تقييم البرامج المرشحة وفق مؤشر طلب السوق (MDI — Market Demand Index) وجاهزية العرض التدريبي لتحديد أولويات الإطلاق</p>
 <div style="display:flex;gap:1px;justify-content:center;background:rgba(0,0,0,.15);border-radius:14px;overflow:hidden;max-width:440px;backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.08);margin:0 auto">
 <div style="flex:1;padding:20px 16px"><div style="font-size:28px;font-weight:800">43</div><div style="font-size:9px;opacity:.4;margin-top:4px">برنامج مرشح</div></div>
 <div style="flex:1;padding:20px 16px;background:rgba(255,255,255,.04)"><div style="font-size:28px;font-weight:800">13</div><div style="font-size:9px;opacity:.4;margin-top:4px">قاعدة مهارات</div></div>
@@ -219,12 +218,41 @@ tr:hover td{background:#f0f8f8}
 
 <div class="page-header">
 <div>
-<div class="page-title">لوحة المعلومات</div>
-<div class="page-sub">ملخص نتائج تقييم 43 برنامجاً تدريبياً مرشحاً عبر 18 قسماً تدريبياً</div>
+<div class="page-title">الملخص التنفيذي</div>
+<div class="page-sub">نتائج تقييم 43 برنامجاً مرشحاً — الأولوية حسب مؤشر طلب السوق MDI (Market Demand Index)</div>
+</div>
+</div>
+
+<!-- Executive Decision Summary -->
+<div style="background:linear-gradient(135deg,#0f172a,#1e293b);border-radius:14px;padding:1.75rem;color:#fff;margin-bottom:1.25rem">
+<div style="font-size:16px;font-weight:700;margin-bottom:14px">قرار مطلوب — ماذا نطلق أولاً؟</div>
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px">
+<div style="background:rgba(14,165,233,.12);border:1px solid rgba(14,165,233,.2);border-radius:10px;padding:14px;cursor:pointer" onclick="switchTabDirect('matrix')">
+<div style="font-size:9px;font-weight:600;color:#38bdf8;letter-spacing:1px;margin-bottom:4px">T1 · إطلاق فوري</div>
+<div style="font-size:32px;font-weight:800;color:#38bdf8;line-height:1" id="ov-t1">0</div>
+<div style="font-size:10px;color:#94a3b8;margin-top:4px">MDI ≥ 80</div>
+</div>
+<div style="background:rgba(59,130,246,.1);border:1px solid rgba(59,130,246,.15);border-radius:10px;padding:14px;cursor:pointer" onclick="switchTabDirect('matrix')">
+<div style="font-size:9px;font-weight:600;color:#93c5fd;letter-spacing:1px;margin-bottom:4px">T2 · توصية بالإطلاق</div>
+<div style="font-size:32px;font-weight:800;color:#93c5fd;line-height:1" id="ov-t2">0</div>
+<div style="font-size:10px;color:#94a3b8;margin-top:4px">MDI 65–79</div>
+</div>
+<div style="background:rgba(245,158,11,.08);border:1px solid rgba(245,158,11,.12);border-radius:10px;padding:14px;cursor:pointer" onclick="switchTabDirect('matrix')">
+<div style="font-size:9px;font-weight:600;color:#fcd34d;letter-spacing:1px;margin-bottom:4px">T3 · مراجعة لاحقة</div>
+<div style="font-size:32px;font-weight:800;color:#fcd34d;line-height:1" id="ov-t3">0</div>
+<div style="font-size:10px;color:#94a3b8;margin-top:4px">MDI 50–64</div>
+</div>
+<div style="background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.12);border-radius:10px;padding:14px;cursor:pointer" onclick="switchTabDirect('matrix')">
+<div style="font-size:9px;font-weight:600;color:#fca5a5;letter-spacing:1px;margin-bottom:4px">T4 · يُعاد التقييم</div>
+<div style="font-size:32px;font-weight:800;color:#fca5a5;line-height:1" id="ov-t4">0</div>
+<div style="font-size:10px;color:#94a3b8;margin-top:4px">MDI &lt; 50</div>
+</div>
 </div>
 </div>
 
 <div class="kpi-row" id="kpi-row-dynamic"></div>
+
+
 
 <!-- Labor Market Context — GASTAT Q4 2025 -->
 <div class="section">
@@ -234,115 +262,81 @@ tr:hover td{background:#f0f8f8}
 </div>
 <div class="section-body">
 <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:16px">
-<div style="text-align:center;padding:16px 8px;border-radius:10px;background:#f0f8f8;border:1px solid #0d737712">
-<div style="font-size:28px;font-weight:800;color:#0d7377">7.2%</div>
+<div style="text-align:center;padding:16px 8px;border-radius:10px;background:#e0f2fe;border:1px solid #0ea5e912">
+<div style="font-size:28px;font-weight:800;color:#0ea5e9">7.2%</div>
 <div style="font-size:10px;color:var(--text2);margin-top:4px">بطالة السعوديين</div>
 <div style="font-size:9px;color:var(--text3);margin-top:2px">ذكور 5.6% · إناث 10.3%</div>
 </div>
-<div style="text-align:center;padding:16px 8px;border-radius:10px;background:#fce8ec;border:1px solid #9b4d5a12">
-<div style="font-size:28px;font-weight:800;color:#9b4d5a">17.6%</div>
+<div style="text-align:center;padding:16px 8px;border-radius:10px;background:#fee2e2;border:1px solid #ef444412">
+<div style="font-size:28px;font-weight:800;color:#ef4444">17.6%</div>
 <div style="font-size:10px;color:var(--text2);margin-top:4px">بطالة الشباب (15–24)</div>
 <div style="font-size:9px;color:var(--text3);margin-top:2px">الفئة المستهدفة من التدريب التقني</div>
 </div>
-<div style="text-align:center;padding:16px 8px;border-radius:10px;background:#e4eff6;border:1px solid #4e7d9612">
-<div style="font-size:28px;font-weight:800;color:#4e7d96">34.5%</div>
+<div style="text-align:center;padding:16px 8px;border-radius:10px;background:#dbeafe;border:1px solid #3b82f612">
+<div style="font-size:28px;font-weight:800;color:#3b82f6">34.5%</div>
 <div style="font-size:10px;color:var(--text2);margin-top:4px">مشاركة المرأة في القوى العاملة</div>
 <div style="font-size:9px;color:var(--text3);margin-top:2px">ذكور 64.7%</div>
 </div>
-<div style="text-align:center;padding:16px 8px;border-radius:10px;background:#f0f8f8;border:1px solid #0d737712">
-<div style="font-size:28px;font-weight:800;color:#0d7377">49.5%</div>
+<div style="text-align:center;padding:16px 8px;border-radius:10px;background:#e0f2fe;border:1px solid #0ea5e912">
+<div style="font-size:28px;font-weight:800;color:#0ea5e9">49.5%</div>
 <div style="font-size:10px;color:var(--text2);margin-top:4px">مشاركة السعوديين في القوى العاملة</div>
 <div style="font-size:9px;color:var(--text3);margin-top:2px">ذكور 64.7% · إناث 34.5%</div>
 </div>
-<div style="text-align:center;padding:16px 8px;border-radius:10px;background:#e0fafa;border:1px solid #1bc5c512">
-<div style="font-size:28px;font-weight:800;color:#0e9e9e">11,103</div>
+<div style="text-align:center;padding:16px 8px;border-radius:10px;background:#e0f2fe;border:1px solid #0ea5e912">
+<div style="font-size:28px;font-weight:800;color:#0ea5e9">11,103</div>
 <div style="font-size:10px;color:var(--text2);margin-top:4px">متوسط الأجر الشهري (ر.س)</div>
 <div style="font-size:9px;color:var(--text3);margin-top:2px">صناعة 10,108 · خدمات 11,261</div>
 </div>
 </div>
-<div style="font-size:11px;color:var(--text2);line-height:1.8;padding:10px 12px;background:#f8faf9;border-radius:8px;border:1px solid #e5ebe8">
-<strong style="color:#0d7377">لماذا هذه الأرقام مهمة؟</strong> بطالة الشباب السعودي عند 17.6% تعني أن كل برنامج تدريبي جديد يجب أن يستهدف مهنة ذات طلب حقيقي. التركّز العالي في القطاع العام (26.4% من المشتغلين السعوديين) يؤكد الحاجة لبرامج تؤهّل للقطاع الخاص — وهو ما تقيسه عوامل MDI مباشرة.
+<div style="font-size:11px;color:var(--text2);line-height:1.8;padding:10px 12px;background:#f1f5f9;border-radius:8px;border:1px solid #e2e8f0">
+<strong style="color:#0ea5e9">لماذا هذه الأرقام مهمة؟</strong> بطالة الشباب السعودي عند 17.6% تعني أن كل برنامج تدريبي جديد يجب أن يستهدف مهنة ذات طلب حقيقي. التركّز العالي في القطاع العام (26.4% من المشتغلين السعوديين) يؤكد الحاجة لبرامج تؤهّل للقطاع الخاص — وهو ما تقيسه عوامل MDI مباشرة.
 </div>
 </div>
 </div>
 
-<!-- 1. Quadrant Distribution — first, clickable -->
+<!-- Tier Distribution -->
 <div class="section">
 <div class="section-head">
 <div class="section-title">توزيع البرامج حسب مستوى الأولوية</div>
-<div class="section-sub">اضغط على أي شريحة للانتقال إلى المصفوفة التفصيلية</div>
+<div class="section-sub">الأولوية تُحدَّد حصراً بناءً على مؤشر الطلب (MDI) · اضغط لعرض الترتيب الكامل</div>
 </div>
 <div class="section-body">
-<div style="display:flex;border-radius:8px;overflow:hidden;height:40px;margin-bottom:12px;cursor:pointer" id="quad-bar" onclick="switchTabDirect('matrix')"></div>
-<div style="display:flex;gap:20px;flex-wrap:wrap;font-size:12px" id="quad-legend"></div>
+<div style="display:flex;border-radius:8px;overflow:hidden;height:44px;margin-bottom:14px;cursor:pointer" id="tier-bar" onclick="switchTabDirect('matrix')"></div>
+<div style="display:flex;gap:20px;flex-wrap:wrap;font-size:12px" id="tier-legend"></div>
 </div>
 </div>
 
-<!-- 2. Gap Analysis — Q1 right (positive), Q2 left (needs work) -->
+<!-- Top 10 Programs -->
 <div class="section">
 <div class="section-head">
-<div>
-<div class="section-title">تحليل الفجوة بين الطلب والعرض</div>
-<div class="section-sub">مقارنة البرامج الجاهزة للإطلاق مقابل البرامج التي تحتاج استثماراً في البنية التحتية</div>
-</div>
+<div><div class="section-title">أعلى 10 برامج حسب مؤشر الطلب</div>
+<div class="section-sub">البرامج ذات الأولوية العليا — MDI هو المحدد الوحيد للترتيب</div></div>
 </div>
 <div class="section-body">
-<div id="gap-analysis"></div>
+<div id="top-programs" style="display:flex;flex-direction:column;gap:6px"></div>
 </div>
 </div>
 
-
-
-<!-- 4. Sector Concentration -->
+<!-- Sector Concentration -->
 <div class="section">
 <div class="section-head">
-<div>
-<div class="section-title">التوزيع القطاعي للبرامج الجاهزة</div>
-<div class="section-sub">توزيع البرامج ذات الأولوية العليا حسب المجلس القطاعي المرتبط</div>
-</div>
+<div><div class="section-title">التوزيع القطاعي للبرامج الجاهزة</div>
+<div class="section-sub">توزيع البرامج ذات الأولوية العليا حسب المجلس القطاعي المرتبط</div></div>
 </div>
 <div class="section-body">
 <div id="sector-insight"></div>
 </div>
 </div>
 
-<!-- 5. Comparison Table with sort -->
-<div class="section">
-<div class="section-head">
-<div>
-<div class="section-title">جدول المقارنة — أعلى 15 برنامج</div>
-<div class="section-sub">مرتّبة حسب مؤشر الطلب MDI — اضغط على رأس العمود للترتيب</div>
-</div>
-</div>
-<div style="overflow-x:auto">
-<table id="overview-compare-table">
-<thead>
-<tr>
-<th>#</th>
-<th>البرنامج التدريبي</th>
-<th>القسم</th>
-<th>رؤية<br>2030</th>
-<th>ارتباط توطين</th>
-<th style="cursor:pointer" onclick="sortOverviewTable('mdi')">MDI ⇅</th>
-<th style="cursor:pointer" onclick="sortOverviewTable('sfs')">SFS ⇅</th>
-<th>المجلس القطاعي</th>
-<th>الأولوية</th>
-</tr>
-</thead>
-<tbody id="main-table-body">
-</tbody>
-</table>
-</div>
-</div>
 </div>
 
 <!-- ===================== METHODOLOGY TAB ===================== -->
 <div class="tab-content" id="tab-methodology">
 
 <!-- Hero -->
-<div style="background:linear-gradient(135deg,#0d6e6e,#0d7377,#4e7d96);border-radius:16px;padding:2.5rem;color:white;margin-bottom:1.5rem;text-align:center">
+<div style="background:linear-gradient(135deg,#0f172a,#1e293b,#334155);border-radius:16px;padding:2.5rem;color:white;margin-bottom:1.5rem;text-align:center">
 <div style="font-size:22px;font-weight:700;margin-bottom:.75rem">كيف نحدد أولوية كل برنامج؟</div>
-<div style="font-size:13px;opacity:.7;max-width:520px;margin:0 auto;line-height:1.7">يُقيَّم كل برنامج وفق بُعدين: مستوى الطلب عليه في سوق العمل (MDI) ومدى جاهزية المؤسسة لتقديمه (SFS). تتقاطع النتيجتان في مصفوفة رباعية لتحديد الأولوية.</div>
+<div style="font-size:13px;opacity:.7;max-width:520px;margin:0 auto;line-height:1.7">يُقيَّم كل برنامج حسب مؤشر طلب السوق MDI — Market Demand Index الذي يحدد مستوى الأولوية. يُعرض مؤشر جاهزية العرض SFS — Supply Feasibility Score للمعلومية فقط لأغراض تخطيط التنفيذ.</div>
 </div>
 
 <!-- ═══════════════════════════════════════════ -->
@@ -355,9 +349,9 @@ tr:hover td{background:#f0f8f8}
 <!-- DEMAND TRACK -->
 <div style="margin-bottom:4px">
 <div style="display:flex;align-items:center;gap:10px;padding:12px 16px;border-radius:12px;background:rgba(13,115,119,.04);border:1px solid rgba(13,115,119,.1);cursor:pointer;user-select:none" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none';this.querySelector('.wf-chv').style.transform=this.nextElementSibling.style.display==='none'?'':'rotate(180deg)';setTimeout(drawWF,350)">
-<svg style="width:18px;height:18px;color:#0d7377;flex-shrink:0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-<div style="flex:1"><div style="font-size:14px;font-weight:700;color:#1a2e2e">جانب الطلب — MDI</div><div style="font-size:10px;color:#8a9e9c;margin-top:1px">7 مصادر في 5 فئات → 6 عوامل (السياسات الوطنية = 50%) → مؤشر 0–100</div></div>
-<span class="wf-chv" style="color:#8a9e9c;font-size:11px;transition:transform .3s;transform:rotate(180deg)">▼</span>
+<svg style="width:18px;height:18px;color:#0ea5e9;flex-shrink:0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+<div style="flex:1"><div style="font-size:14px;font-weight:700;color:#0f172a">جانب الطلب — MDI</div><div style="font-size:10px;color:#94a3b8;margin-top:1px">7 مصادر في 5 فئات → 6 عوامل (السياسات الوطنية = 50%) → مؤشر 0–100</div></div>
+<span class="wf-chv" style="color:#94a3b8;font-size:11px;transition:transform .3s;transform:rotate(180deg)">▼</span>
 </div>
 
 <div id="wf-demand" style="overflow-x:auto;padding:1rem 0">
@@ -366,28 +360,28 @@ tr:hover td{background:#f0f8f8}
 
 <!-- Sources -->
 <div style="display:flex;flex-direction:column;gap:5px;flex:1.4;min-width:195px;z-index:2">
-<div style="font-size:7px;font-weight:700;letter-spacing:2px;text-transform:uppercase;text-align:center;color:#8a9e9c;margin-bottom:4px">المصادر</div>
+<div style="font-size:7px;font-weight:700;letter-spacing:2px;text-transform:uppercase;text-align:center;color:#94a3b8;margin-bottom:4px">المصادر</div>
 <div style="border:1px solid rgba(13,115,119,.12);border-radius:10px;padding:6px;background:rgba(13,115,119,.015);margin-bottom:4px">
-<div style="font-size:7.5px;font-weight:700;letter-spacing:1px;color:#0d7377;padding:2px 6px 5px;border-bottom:1px solid rgba(13,115,119,.06);margin-bottom:5px;display:flex;justify-content:space-between"><span>السياسات الوطنية</span><span style="background:rgba(13,115,119,.08);padding:1px 6px;border-radius:4px">50%</span></div>
-<div class="wf-n" id="wd1" style="border-color:rgba(13,115,119,.12)"><div style="font-size:10.5px;font-weight:600;color:#1a2e2e">قرارات التوطين</div><div style="font-size:8px;color:#8a9e9c;margin-top:1px">نسب التوطين والجداول الزمنية</div></div>
-<div class="wf-n" id="wd2" style="border-color:rgba(13,115,119,.12);margin-top:4px"><div style="font-size:10.5px;font-weight:600;color:#1a2e2e">مشاريع رؤية 2030</div><div style="font-size:8px;color:#8a9e9c;margin-top:1px">نيوم · البحر الأحمر · القدية · روشن</div></div>
+<div style="font-size:7.5px;font-weight:700;letter-spacing:1px;color:#0ea5e9;padding:2px 6px 5px;border-bottom:1px solid rgba(13,115,119,.06);margin-bottom:5px;display:flex;justify-content:space-between"><span>السياسات الوطنية</span><span style="background:rgba(13,115,119,.08);padding:1px 6px;border-radius:4px">50%</span></div>
+<div class="wf-n" id="wd1" style="border-color:rgba(13,115,119,.12)"><div style="font-size:10.5px;font-weight:600;color:#0f172a">قرارات التوطين</div><div style="font-size:8px;color:#94a3b8;margin-top:1px">نسب التوطين والجداول الزمنية</div></div>
+<div class="wf-n" id="wd2" style="border-color:rgba(13,115,119,.12);margin-top:4px"><div style="font-size:10.5px;font-weight:600;color:#0f172a">مشاريع رؤية 2030</div><div style="font-size:8px;color:#94a3b8;margin-top:1px">نيوم · البحر الأحمر · القدية · روشن</div></div>
 </div>
 <div style="border:1px solid rgba(78,125,150,.1);border-radius:10px;padding:6px;background:rgba(78,125,150,.01);margin-bottom:4px">
-<div style="font-size:7.5px;font-weight:700;letter-spacing:1px;color:#4e7d96;padding:2px 6px 5px;border-bottom:1px solid rgba(78,125,150,.06);margin-bottom:5px;display:flex;justify-content:space-between"><span>المعايير الدولية</span><span style="background:rgba(78,125,150,.06);padding:1px 6px;border-radius:4px">15%</span></div>
-<div class="wf-n" id="wd3" style="border-color:rgba(78,125,150,.1)"><div style="font-size:10.5px;font-weight:600;color:#1a2e2e">O*NET Bright Outlook</div><div style="font-size:8px;color:#8a9e9c;margin-top:1px">توقعات BLS 2024–2034</div></div>
+<div style="font-size:7.5px;font-weight:700;letter-spacing:1px;color:#3b82f6;padding:2px 6px 5px;border-bottom:1px solid rgba(78,125,150,.06);margin-bottom:5px;display:flex;justify-content:space-between"><span>المعايير الدولية</span><span style="background:rgba(78,125,150,.06);padding:1px 6px;border-radius:4px">15%</span></div>
+<div class="wf-n" id="wd3" style="border-color:rgba(78,125,150,.1)"><div style="font-size:10.5px;font-weight:600;color:#0f172a">O*NET Bright Outlook</div><div style="font-size:8px;color:#94a3b8;margin-top:1px">توقعات BLS 2024–2034</div></div>
 </div>
 <div style="border:1px solid rgba(184,134,11,.1);border-radius:10px;padding:6px;background:rgba(184,134,11,.01);margin-bottom:4px">
-<div style="font-size:7.5px;font-weight:700;letter-spacing:1px;color:#b8860b;padding:2px 6px 5px;border-bottom:1px solid rgba(184,134,11,.06);margin-bottom:5px;display:flex;justify-content:space-between"><span>الاستخبارات القطاعية</span><span style="background:rgba(184,134,11,.05);padding:1px 6px;border-radius:4px">15%</span></div>
-<div class="wf-n" id="wd4" style="border-color:rgba(184,134,11,.1)"><div style="font-size:10.5px;font-weight:600;color:#1a2e2e">13 قاعدة بيانات قطاعية</div><div style="font-size:8px;color:#8a9e9c;margin-top:1px">142 مجموعة وظيفية</div></div>
+<div style="font-size:7.5px;font-weight:700;letter-spacing:1px;color:#f59e0b;padding:2px 6px 5px;border-bottom:1px solid rgba(184,134,11,.06);margin-bottom:5px;display:flex;justify-content:space-between"><span>الاستخبارات القطاعية</span><span style="background:rgba(184,134,11,.05);padding:1px 6px;border-radius:4px">15%</span></div>
+<div class="wf-n" id="wd4" style="border-color:rgba(184,134,11,.1)"><div style="font-size:10.5px;font-weight:600;color:#0f172a">13 قاعدة بيانات قطاعية</div><div style="font-size:8px;color:#94a3b8;margin-top:1px">142 مجموعة وظيفية</div></div>
 </div>
 <div style="border:1px solid rgba(14,140,140,.1);border-radius:10px;padding:6px;background:rgba(14,140,140,.01);margin-bottom:4px">
-<div style="font-size:7.5px;font-weight:700;letter-spacing:1px;color:#0e8c8c;padding:2px 6px 5px;border-bottom:1px solid rgba(14,140,140,.06);margin-bottom:5px;display:flex;justify-content:space-between"><span>أدلة السوق المحلي</span><span style="background:rgba(14,140,140,.06);padding:1px 6px;border-radius:4px">15%</span></div>
-<div class="wf-n" id="wd5" style="border-color:rgba(14,140,140,.1)"><div style="font-size:10.5px;font-weight:600;color:#1a2e2e">GASTAT Q4-2025</div><div style="font-size:8px;color:#8a9e9c;margin-top:1px">توظيف السعوديين والأجور</div></div>
-<div class="wf-n" id="wd6" style="border-color:rgba(14,140,140,.1);margin-top:4px"><div style="font-size:10.5px;font-weight:600;color:#1a2e2e">منصة جدارات</div><div style="font-size:8px;color:#8a9e9c;margin-top:1px">الشواغر النشطة</div></div>
+<div style="font-size:7.5px;font-weight:700;letter-spacing:1px;color:#0ea5e9;padding:2px 6px 5px;border-bottom:1px solid rgba(14,140,140,.06);margin-bottom:5px;display:flex;justify-content:space-between"><span>أدلة السوق المحلي</span><span style="background:rgba(14,140,140,.06);padding:1px 6px;border-radius:4px">15%</span></div>
+<div class="wf-n" id="wd5" style="border-color:rgba(14,140,140,.1)"><div style="font-size:10.5px;font-weight:600;color:#0f172a">GASTAT Q4-2025</div><div style="font-size:8px;color:#94a3b8;margin-top:1px">توظيف السعوديين والأجور</div></div>
+<div class="wf-n" id="wd6" style="border-color:rgba(14,140,140,.1);margin-top:4px"><div style="font-size:10.5px;font-weight:600;color:#0f172a">منصة جدارات</div><div style="font-size:8px;color:#94a3b8;margin-top:1px">الشواغر النشطة</div></div>
 </div>
 <div style="border:1px solid rgba(107,143,107,.1);border-radius:10px;padding:6px;background:rgba(107,143,107,.01)">
-<div style="font-size:7.5px;font-weight:700;letter-spacing:1px;color:#6b8f6b;padding:2px 6px 5px;border-bottom:1px solid rgba(107,143,107,.06);margin-bottom:5px;display:flex;justify-content:space-between"><span>المسارات البديلة</span><span style="background:rgba(107,143,107,.04);padding:1px 6px;border-radius:4px">5%</span></div>
-<div class="wf-n" id="wd7" style="border-color:rgba(107,143,107,.1)"><div style="font-size:10.5px;font-weight:600;color:#1a2e2e">العمل الحر · بحر</div><div style="font-size:8px;color:#8a9e9c;margin-top:1px">+140 مهنة معتمدة</div></div>
+<div style="font-size:7.5px;font-weight:700;letter-spacing:1px;color:#10b981;padding:2px 6px 5px;border-bottom:1px solid rgba(107,143,107,.06);margin-bottom:5px;display:flex;justify-content:space-between"><span>المسارات البديلة</span><span style="background:rgba(107,143,107,.04);padding:1px 6px;border-radius:4px">5%</span></div>
+<div class="wf-n" id="wd7" style="border-color:rgba(107,143,107,.1)"><div style="font-size:10.5px;font-weight:600;color:#0f172a">العمل الحر · بحر</div><div style="font-size:8px;color:#94a3b8;margin-top:1px">+140 مهنة معتمدة</div></div>
 </div>
 </div>
 
@@ -395,18 +389,18 @@ tr:hover td{background:#f0f8f8}
 
 <!-- Factors -->
 <div style="display:flex;flex-direction:column;gap:5px;flex:1;min-width:185px;z-index:2">
-<div style="font-size:7px;font-weight:700;letter-spacing:2px;text-transform:uppercase;text-align:center;color:#8a9e9c;margin-bottom:4px">6 عوامل مرجّحة</div>
+<div style="font-size:7px;font-weight:700;letter-spacing:2px;text-transform:uppercase;text-align:center;color:#94a3b8;margin-bottom:4px">6 عوامل مرجّحة</div>
 <div style="border:1px solid rgba(13,115,119,.15);border-radius:10px;padding:6px;background:rgba(13,115,119,.02);margin-bottom:4px">
-<div style="font-size:7.5px;font-weight:700;color:#0d7377;padding:2px 6px 5px;border-bottom:1px solid rgba(13,115,119,.06);margin-bottom:5px;display:flex;justify-content:space-between"><span>مؤشرات السياسات الوطنية</span><span style="background:rgba(13,115,119,.08);padding:1px 6px;border-radius:4px;font-size:8px">50%</span></div>
-<div class="wf-n wf-f" id="wf1"><div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:10.5px;font-weight:600;color:#1a2e2e">التوطين</span><span style="font-size:8px;font-weight:700;color:#0d7377;background:rgba(13,115,119,.08);padding:1px 7px;border-radius:3px">25%</span></div></div>
-<div class="wf-n wf-f" id="wf2" style="margin-top:4px"><div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:10.5px;font-weight:600;color:#1a2e2e">رؤية 2030</span><span style="font-size:8px;font-weight:700;color:#0d7377;background:rgba(13,115,119,.08);padding:1px 7px;border-radius:3px">25%</span></div></div>
+<div style="font-size:7.5px;font-weight:700;color:#0ea5e9;padding:2px 6px 5px;border-bottom:1px solid rgba(13,115,119,.06);margin-bottom:5px;display:flex;justify-content:space-between"><span>مؤشرات السياسات الوطنية</span><span style="background:rgba(13,115,119,.08);padding:1px 6px;border-radius:4px;font-size:8px">50%</span></div>
+<div class="wf-n wf-f" id="wf1"><div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:10.5px;font-weight:600;color:#0f172a">التوطين</span><span style="font-size:8px;font-weight:700;color:#0ea5e9;background:rgba(13,115,119,.08);padding:1px 7px;border-radius:3px">25%</span></div></div>
+<div class="wf-n wf-f" id="wf2" style="margin-top:4px"><div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:10.5px;font-weight:600;color:#0f172a">رؤية 2030</span><span style="font-size:8px;font-weight:700;color:#0ea5e9;background:rgba(13,115,119,.08);padding:1px 7px;border-radius:3px">25%</span></div></div>
 </div>
 <div style="border:1px solid rgba(13,115,119,.08);border-radius:10px;padding:6px;background:rgba(13,115,119,.008)">
-<div style="font-size:7.5px;font-weight:700;color:#0d7377;opacity:.6;padding:2px 6px 5px;border-bottom:1px solid rgba(13,115,119,.04);margin-bottom:5px;display:flex;justify-content:space-between"><span>مؤشرات السوق والمهارات</span><span style="background:rgba(13,115,119,.04);padding:1px 6px;border-radius:4px;font-size:8px">50%</span></div>
-<div class="wf-n wf-f" id="wf3"><div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:10.5px;font-weight:600;color:#1a2e2e">التوقعات العالمية</span><span style="font-size:8px;font-weight:700;color:#4e7d96;background:rgba(78,125,150,.06);padding:1px 7px;border-radius:3px">15%</span></div></div>
-<div class="wf-n wf-f" id="wf4" style="margin-top:4px"><div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:10.5px;font-weight:600;color:#1a2e2e">أولوية المجالس</span><span style="font-size:8px;font-weight:700;color:#4e7d96;background:rgba(78,125,150,.06);padding:1px 7px;border-radius:3px">15%</span></div></div>
-<div class="wf-n wf-f" id="wf5" style="margin-top:4px"><div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:10.5px;font-weight:600;color:#1a2e2e">سوق العمل المحلي</span><span style="font-size:8px;font-weight:700;color:#4e7d96;background:rgba(78,125,150,.06);padding:1px 7px;border-radius:3px">15%</span></div></div>
-<div class="wf-n wf-f" id="wf6" style="margin-top:4px;opacity:.7"><div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:10.5px;font-weight:600;color:#1a2e2e">العمل الحر</span><span style="font-size:8px;font-weight:700;color:#8a9e9c;background:rgba(0,0,0,.03);padding:1px 7px;border-radius:3px">5%</span></div></div>
+<div style="font-size:7.5px;font-weight:700;color:#0ea5e9;opacity:.6;padding:2px 6px 5px;border-bottom:1px solid rgba(13,115,119,.04);margin-bottom:5px;display:flex;justify-content:space-between"><span>مؤشرات السوق والمهارات</span><span style="background:rgba(13,115,119,.04);padding:1px 6px;border-radius:4px;font-size:8px">50%</span></div>
+<div class="wf-n wf-f" id="wf3"><div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:10.5px;font-weight:600;color:#0f172a">التوقعات العالمية</span><span style="font-size:8px;font-weight:700;color:#3b82f6;background:rgba(78,125,150,.06);padding:1px 7px;border-radius:3px">15%</span></div></div>
+<div class="wf-n wf-f" id="wf4" style="margin-top:4px"><div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:10.5px;font-weight:600;color:#0f172a">أولوية المجالس</span><span style="font-size:8px;font-weight:700;color:#3b82f6;background:rgba(78,125,150,.06);padding:1px 7px;border-radius:3px">15%</span></div></div>
+<div class="wf-n wf-f" id="wf5" style="margin-top:4px"><div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:10.5px;font-weight:600;color:#0f172a">سوق العمل المحلي</span><span style="font-size:8px;font-weight:700;color:#3b82f6;background:rgba(78,125,150,.06);padding:1px 7px;border-radius:3px">15%</span></div></div>
+<div class="wf-n wf-f" id="wf6" style="margin-top:4px;opacity:.7"><div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:10.5px;font-weight:600;color:#0f172a">العمل الحر</span><span style="font-size:8px;font-weight:700;color:#94a3b8;background:rgba(0,0,0,.03);padding:1px 7px;border-radius:3px">5%</span></div></div>
 </div>
 </div>
 
@@ -415,9 +409,9 @@ tr:hover td{background:#f0f8f8}
 <!-- Output -->
 <div style="display:flex;flex-direction:column;align-items:center;padding-top:100px;min-width:110px;flex:.5;z-index:2">
 <div id="wf-mdi" style="text-align:center;padding:18px 16px;border-radius:14px;border:2px solid rgba(45,138,78,.2);background:rgba(45,138,78,.02);width:110px">
-<div style="font-size:7px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#2d8a4e;opacity:.6">المخرج</div>
-<div style="font-size:38px;font-weight:800;color:#2d8a4e;line-height:1;margin:3px 0">MDI</div>
-<div style="font-size:9px;color:#2d8a4e;opacity:.45">0 — 100</div>
+<div style="font-size:7px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#10b981;opacity:.6">المخرج</div>
+<div style="font-size:38px;font-weight:800;color:#10b981;line-height:1;margin:3px 0">MDI</div>
+<div style="font-size:9px;color:#10b981;opacity:.45">0 — 100</div>
 </div>
 </div>
 </div>
@@ -427,36 +421,36 @@ tr:hover td{background:#f0f8f8}
 <!-- SUPPLY TRACK -->
 <div style="margin-top:6px">
 <div style="display:flex;align-items:center;gap:10px;padding:12px 16px;border-radius:12px;background:rgba(78,125,150,.04);border:1px solid rgba(78,125,150,.08);cursor:pointer;user-select:none" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none';this.querySelector('.wf-chv').style.transform=this.nextElementSibling.style.display==='none'?'':'rotate(180deg)';setTimeout(drawWF,350)">
-<svg style="width:18px;height:18px;color:#4e7d96;flex-shrink:0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="16" y2="10"/></svg>
-<div style="flex:1"><div style="font-size:14px;font-weight:700;color:#1a2e2e">جانب العرض — SFS</div><div style="font-size:10px;color:#8a9e9c;margin-top:1px">3 مصادر من ملفات الأقسام → 3 عوامل مرجّحة → مؤشر 0–100</div></div>
-<span class="wf-chv" style="color:#8a9e9c;font-size:11px;transition:transform .3s">▼</span>
+<svg style="width:18px;height:18px;color:#3b82f6;flex-shrink:0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="16" y2="10"/></svg>
+<div style="flex:1"><div style="font-size:14px;font-weight:700;color:#0f172a">جانب العرض — SFS</div><div style="font-size:10px;color:#94a3b8;margin-top:1px">3 مصادر من ملفات الأقسام → 3 عوامل مرجّحة → مؤشر 0–100</div></div>
+<span class="wf-chv" style="color:#94a3b8;font-size:11px;transition:transform .3s">▼</span>
 </div>
 
 <div id="wf-supply" style="overflow-x:auto;padding:1rem 0;display:none">
 <div id="wf-supply-flow" style="display:flex;direction:rtl;align-items:flex-start;gap:0;min-width:800px;position:relative">
 <svg id="wf-s-svg" style="position:absolute;top:0;right:0;width:100%;height:100%;pointer-events:none;z-index:1"></svg>
 <div style="display:flex;flex-direction:column;gap:5px;flex:1.2;min-width:200px;z-index:2">
-<div style="font-size:7px;font-weight:700;letter-spacing:2px;text-transform:uppercase;text-align:center;color:#8a9e9c;margin-bottom:4px">المصادر</div>
+<div style="font-size:7px;font-weight:700;letter-spacing:2px;text-transform:uppercase;text-align:center;color:#94a3b8;margin-bottom:4px">المصادر</div>
 <div style="border:1px solid rgba(78,125,150,.1);border-radius:10px;padding:6px;background:rgba(78,125,150,.01)">
-<div style="font-size:7.5px;font-weight:700;color:#4e7d96;padding:2px 6px 5px;border-bottom:1px solid rgba(78,125,150,.06);margin-bottom:5px">ملفات الأقسام التدريبية</div>
-<div class="wf-n" id="ws1" style="border-color:rgba(78,125,150,.1)"><div style="font-size:10.5px;font-weight:600;color:#1a2e2e">متطلبات الموارد البشرية</div><div style="font-size:8px;color:#8a9e9c;margin-top:1px">المدربون · المؤهلات · الفنيون</div></div>
-<div class="wf-n" id="ws2" style="border-color:rgba(78,125,150,.1);margin-top:4px"><div style="font-size:10.5px;font-weight:600;color:#1a2e2e">متطلبات التجهيزات</div><div style="font-size:8px;color:#8a9e9c;margin-top:1px">المعامل · الورش · الأجهزة</div></div>
-<div class="wf-n" id="ws3" style="border-color:rgba(78,125,150,.1);margin-top:4px"><div style="font-size:10.5px;font-weight:600;color:#1a2e2e">تقدير تعقيد التنفيذ</div><div style="font-size:8px;color:#8a9e9c;margin-top:1px">نوع البنية التحتية · المدة</div></div>
+<div style="font-size:7.5px;font-weight:700;color:#3b82f6;padding:2px 6px 5px;border-bottom:1px solid rgba(78,125,150,.06);margin-bottom:5px">ملفات الأقسام التدريبية</div>
+<div class="wf-n" id="ws1" style="border-color:rgba(78,125,150,.1)"><div style="font-size:10.5px;font-weight:600;color:#0f172a">متطلبات الموارد البشرية</div><div style="font-size:8px;color:#94a3b8;margin-top:1px">المدربون · المؤهلات · الفنيون</div></div>
+<div class="wf-n" id="ws2" style="border-color:rgba(78,125,150,.1);margin-top:4px"><div style="font-size:10.5px;font-weight:600;color:#0f172a">متطلبات التجهيزات</div><div style="font-size:8px;color:#94a3b8;margin-top:1px">المعامل · الورش · الأجهزة</div></div>
+<div class="wf-n" id="ws3" style="border-color:rgba(78,125,150,.1);margin-top:4px"><div style="font-size:10.5px;font-weight:600;color:#0f172a">تقدير تعقيد التنفيذ</div><div style="font-size:8px;color:#94a3b8;margin-top:1px">نوع البنية التحتية · المدة</div></div>
 </div>
 </div>
 <div style="width:50px;flex-shrink:0"></div>
 <div style="display:flex;flex-direction:column;gap:5px;flex:1;min-width:180px;z-index:2">
-<div style="font-size:7px;font-weight:700;letter-spacing:2px;text-transform:uppercase;text-align:center;color:#8a9e9c;margin-bottom:4px">3 عوامل مرجّحة</div>
-<div class="wf-n wf-f" id="wsf1"><div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:10.5px;font-weight:600;color:#1a2e2e">هيئة التدريب</span><span style="font-size:8px;font-weight:700;color:#4e7d96;background:rgba(78,125,150,.06);padding:1px 7px;border-radius:3px">40%</span></div></div>
-<div class="wf-n wf-f" id="wsf2"><div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:10.5px;font-weight:600;color:#1a2e2e">المعامل والتجهيزات</span><span style="font-size:8px;font-weight:700;color:#4e7d96;background:rgba(78,125,150,.06);padding:1px 7px;border-radius:3px">35%</span></div></div>
-<div class="wf-n wf-f" id="wsf3" style="opacity:.8"><div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:10.5px;font-weight:600;color:#1a2e2e">سرعة التنفيذ</span><span style="font-size:8px;font-weight:700;color:#8a9e9c;background:rgba(0,0,0,.03);padding:1px 7px;border-radius:3px">25%</span></div></div>
+<div style="font-size:7px;font-weight:700;letter-spacing:2px;text-transform:uppercase;text-align:center;color:#94a3b8;margin-bottom:4px">3 عوامل مرجّحة</div>
+<div class="wf-n wf-f" id="wsf1"><div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:10.5px;font-weight:600;color:#0f172a">هيئة التدريب</span><span style="font-size:8px;font-weight:700;color:#3b82f6;background:rgba(78,125,150,.06);padding:1px 7px;border-radius:3px">40%</span></div></div>
+<div class="wf-n wf-f" id="wsf2"><div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:10.5px;font-weight:600;color:#0f172a">المعامل والتجهيزات</span><span style="font-size:8px;font-weight:700;color:#3b82f6;background:rgba(78,125,150,.06);padding:1px 7px;border-radius:3px">35%</span></div></div>
+<div class="wf-n wf-f" id="wsf3" style="opacity:.8"><div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:10.5px;font-weight:600;color:#0f172a">سرعة التنفيذ</span><span style="font-size:8px;font-weight:700;color:#94a3b8;background:rgba(0,0,0,.03);padding:1px 7px;border-radius:3px">25%</span></div></div>
 </div>
 <div style="width:50px;flex-shrink:0"></div>
 <div style="display:flex;flex-direction:column;align-items:center;padding-top:20px;min-width:110px;flex:.5;z-index:2">
 <div id="wf-sfs" style="text-align:center;padding:18px 16px;border-radius:14px;border:2px solid rgba(45,138,78,.2);background:rgba(45,138,78,.02);width:110px">
-<div style="font-size:7px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#2d8a4e;opacity:.6">المخرج</div>
-<div style="font-size:38px;font-weight:800;color:#2d8a4e;line-height:1;margin:3px 0">SFS</div>
-<div style="font-size:9px;color:#2d8a4e;opacity:.45">0 — 100</div>
+<div style="font-size:7px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#10b981;opacity:.6">المخرج</div>
+<div style="font-size:38px;font-weight:800;color:#10b981;line-height:1;margin:3px 0">SFS</div>
+<div style="font-size:9px;color:#10b981;opacity:.45">0 — 100</div>
 </div>
 </div>
 <div style="flex:1"></div>
@@ -470,38 +464,94 @@ tr:hover td{background:#f0f8f8}
 <!-- 2x2 Matrix -->
 <div class="section">
 <div class="section-body" style="padding:1.5rem">
-<div style="text-align:center;margin-bottom:1rem">
-<div style="font-size:14px;font-weight:700;color:#1a2e2e">مصفوفة تحديد الأولوية</div>
-<div style="font-size:11px;color:var(--text3);margin-top:4px">تقاطع MDI مع SFS يحدد مستوى أولوية كل برنامج</div>
+<div style="text-align:center;margin-bottom:1.25rem">
+<div style="font-size:14px;font-weight:700;color:#0f172a">سُلّم الأولوية — تصنيف MDI</div>
+<div style="font-size:11px;color:var(--text3);margin-top:4px">الترتيب يعتمد حصراً على مؤشر الطلب · مؤشر العرض SFS للمعلومية فقط</div>
 </div>
-<div style="display:grid;grid-template-columns:auto 1fr 1fr;grid-template-rows:auto 1fr 1fr;gap:1px;max-width:480px;margin:0 auto;font-size:12px;direction:ltr;background:var(--border);border-radius:10px;overflow:hidden">
-<div style="background:var(--card);padding:10px"></div>
-<div style="background:var(--card);text-align:center;padding:10px;font-weight:600;color:var(--text3);font-size:10px">← طلب أقل<br>MDI &lt; 65</div>
-<div style="background:var(--card);text-align:center;padding:10px;font-weight:600;color:var(--text);font-size:10px">طلب قوي →<br>MDI ≥ 65</div>
-<div style="background:var(--card);writing-mode:vertical-rl;transform:rotate(180deg);text-align:center;padding:10px;font-weight:600;color:var(--text);font-size:10px">↑ عرض جاهز<br>SFS ≥ 50</div>
-<div style="background:var(--card);padding:1.25rem;text-align:center;border-left:3px solid #1bc5c5"><div style="font-size:14px;font-weight:700;color:#4e7d96">اختياري</div><div style="font-size:10px;color:var(--text3);margin-top:4px">جاهز لكن الطلب محدود</div></div>
-<div style="background:var(--card);padding:1.25rem;text-align:center;border-left:3px solid #0d7377"><div style="font-size:14px;font-weight:700;color:#0d7377">إطلاق فوري</div><div style="font-size:10px;color:var(--text3);margin-top:4px">يُطلق مباشرة</div></div>
-<div style="background:var(--card);writing-mode:vertical-rl;transform:rotate(180deg);text-align:center;padding:10px;font-weight:600;color:var(--text3);font-size:10px">↓ عرض ضعيف<br>SFS &lt; 50</div>
-<div style="background:var(--card);padding:1.25rem;text-align:center;border-left:3px solid #3a3a3c"><div style="font-size:14px;font-weight:700;color:#3a3a3c">أولوية منخفضة</div><div style="font-size:10px;color:var(--text3);margin-top:4px">يُعاد التقييم لاحقاً</div></div>
-<div style="background:var(--card);padding:1.25rem;text-align:center;border-left:3px solid #4e7d96"><div style="font-size:14px;font-weight:700;color:#4e7d96">استثمار وتخطيط</div><div style="font-size:10px;color:var(--text3);margin-top:4px">طلب قوي، يتطلب بناء قدرات</div></div>
+
+<!-- Tier Gradient Scale -->
+<div style="max-width:720px;margin:0 auto">
+<!-- Scale bar -->
+<div style="position:relative;height:56px;border-radius:10px;overflow:hidden;display:flex;border:1px solid var(--border)">
+<div style="flex:1;background:linear-gradient(90deg,#fee2e2,#fee2e2);display:flex;align-items:center;justify-content:center;position:relative">
+<div style="font-size:10px;font-weight:700;color:#ef4444">أولوية منخفضة</div>
 </div>
+<div style="flex:1;background:linear-gradient(90deg,#fef3c7,#fef3c7);display:flex;align-items:center;justify-content:center">
+<div style="font-size:10px;font-weight:700;color:#f59e0b">أولوية متوسطة</div>
+</div>
+<div style="flex:1;background:linear-gradient(90deg,#dbeafe,#dbeafe);display:flex;align-items:center;justify-content:center">
+<div style="font-size:10px;font-weight:700;color:#3b82f6">أولوية عالية</div>
+</div>
+<div style="flex:1;background:linear-gradient(90deg,#e0f2fe,#e0f2fe);display:flex;align-items:center;justify-content:center">
+<div style="font-size:10px;font-weight:700;color:#0ea5e9">أولوية عليا</div>
+</div>
+</div>
+<!-- Thresholds -->
+<div style="display:flex;margin-top:6px;font-size:10px;color:var(--text3);font-variant-numeric:tabular-nums">
+<div style="flex:1;text-align:right">0</div>
+<div style="flex:1;text-align:right;position:relative"><span style="position:absolute;right:-8px;top:0">50</span></div>
+<div style="flex:1;text-align:right;position:relative"><span style="position:absolute;right:-8px;top:0">65</span></div>
+<div style="flex:1;text-align:right;position:relative"><span style="position:absolute;right:-8px;top:0">80</span></div>
+<div style="width:0;text-align:left">100</div>
+</div>
+<div style="text-align:center;margin-top:4px;font-size:10px;color:var(--text3);letter-spacing:1px">← MDI Score →</div>
+
+<!-- 4 Tier Action Cards -->
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:24px;font-size:12px">
+<div style="border-radius:12px;overflow:hidden;border:1px solid #0ea5e925">
+<div style="background:#0ea5e9;color:white;padding:14px;text-align:center">
+<div style="font-size:11px;font-weight:800;letter-spacing:1px">T1</div>
+<div style="font-size:13px;font-weight:700;margin-top:4px">أولوية عليا</div>
+<div style="font-size:10px;opacity:.8;margin-top:4px">MDI ≥ 80</div>
+</div>
+<div style="padding:12px;font-size:11px;color:var(--text2);line-height:1.7;background:#e0f2fe55">إطلاق فوري — الطلب قوي ومؤكَّد، ينبغي بدء تصميم المنهج مباشرة</div>
+</div>
+<div style="border-radius:12px;overflow:hidden;border:1px solid #3b82f625">
+<div style="background:#3b82f6;color:white;padding:14px;text-align:center">
+<div style="font-size:11px;font-weight:800;letter-spacing:1px">T2</div>
+<div style="font-size:13px;font-weight:700;margin-top:4px">أولوية عالية</div>
+<div style="font-size:10px;opacity:.8;margin-top:4px">MDI 65–79</div>
+</div>
+<div style="padding:12px;font-size:11px;color:var(--text2);line-height:1.7;background:#dbeafe55">توصية بالإطلاق — طلب واضح، ضمن الموجة الثانية من المرشحين</div>
+</div>
+<div style="border-radius:12px;overflow:hidden;border:1px solid #f59e0b25">
+<div style="background:#f59e0b;color:white;padding:14px;text-align:center">
+<div style="font-size:11px;font-weight:800;letter-spacing:1px">T3</div>
+<div style="font-size:13px;font-weight:700;margin-top:4px">أولوية متوسطة</div>
+<div style="font-size:10px;opacity:.8;margin-top:4px">MDI 50–64</div>
+</div>
+<div style="padding:12px;font-size:11px;color:var(--text2);line-height:1.7;background:#fef3c755">مراجعة لاحقة — طلب محدود، يُعاد التقييم بعد سنة من تحديث البيانات</div>
+</div>
+<div style="border-radius:12px;overflow:hidden;border:1px solid #ef444425">
+<div style="background:#ef4444;color:white;padding:14px;text-align:center">
+<div style="font-size:11px;font-weight:800;letter-spacing:1px">T4</div>
+<div style="font-size:13px;font-weight:700;margin-top:4px">أولوية منخفضة</div>
+<div style="font-size:10px;opacity:.8;margin-top:4px">MDI &lt; 50</div>
+</div>
+<div style="padding:12px;font-size:11px;color:var(--text2);line-height:1.7;background:#fee2e255">تأجيل — لا يوجد سند كافٍ من الطلب، يُعاد التقييم عند تغيّر جوهري في السوق</div>
 </div>
 </div>
 
+<div style="margin-top:1.25rem;padding:12px 14px;border-radius:10px;background:#fef3c722;border:1px solid #f59e0b22;font-size:11px;color:var(--text2);line-height:1.7">
+<strong style="color:#f59e0b">ملاحظة منهجية:</strong> مؤشر العرض (SFS) يُحسب لكل برنامج للأغراض التخطيطية (تقدير الموارد، البنية التحتية، الجدول الزمني للتنفيذ) — لكنه لا يدخل في تحديد الأولوية. برنامج ذو MDI = 80 و SFS = 30 يبقى أولوية عليا، لكن تخطيط تنفيذه سيتطلب مرحلة إعداد أطول.
+</div>
+</div>
+</div>
+</div>
 <!-- Factor Detail Accordions -->
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
 <div class="accordion">
 <div class="accordion-head" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">
-<div><div class="acc-title" style="color:#0d7377;font-size:14px">تفاصيل عوامل الطلب — سُلّم التقييم</div><div style="font-size:10px;color:var(--text3);margin-top:2px">اضغط لعرض معايير الدرجات 1–5 لكل عامل</div></div>
+<div><div class="acc-title" style="color:#0ea5e9;font-size:14px">تفاصيل عوامل الطلب — سُلّم التقييم</div><div style="font-size:10px;color:var(--text3);margin-top:2px">اضغط لعرض معايير الدرجات 1–5 لكل عامل</div></div>
 <span class="acc-arrow">▼</span>
 </div>
 <div class="accordion-body">
 <div class="accordion-inner" style="padding:1rem">
 <div id="method-factors"></div>
-<div style="margin-top:12px;padding:10px;border-radius:8px;background:#d0efef15;border:1px solid #0d737715;font-size:11px;color:var(--text2);line-height:1.7">
-<strong style="color:#0d7377">مؤشرات الارتباط بالسياسات:</strong> العاملان الأولان (التوطين + رؤية 2030) يحملان 50% من وزن MDI. البرامج التي لا ترتبط بقرار توطين أو مشروع رؤية تحصل طبيعياً على درجات منخفضة في هذين العاملين، مما يمنعها من الوصول إلى مستوى الإطلاق الفوري. لا يُستبعد أي برنامج من التقييم — الأوزان تؤدي دور الفلترة تلقائياً.
+<div style="margin-top:12px;padding:10px;border-radius:8px;background:#e0f2fe15;border:1px solid #0ea5e915;font-size:11px;color:var(--text2);line-height:1.7">
+<strong style="color:#0ea5e9">مؤشرات الارتباط بالسياسات:</strong> العاملان الأولان (التوطين + رؤية 2030) يحملان 50% من وزن MDI. البرامج التي لا ترتبط بقرار توطين أو مشروع رؤية تحصل طبيعياً على درجات منخفضة في هذين العاملين، مما يمنعها من الوصول إلى مستوى الإطلاق الفوري. لا يُستبعد أي برنامج من التقييم — الأوزان تؤدي دور الفلترة تلقائياً.
 </div>
-<div style="margin-top:10px;font-size:11px;font-weight:600;color:#0d7377;direction:ltr;font-family:monospace;background:#f0f8f8;padding:10px 12px;border-radius:8px;border:1px solid #0d737720;text-align:center;letter-spacing:.3px">
+<div style="margin-top:10px;font-size:11px;font-weight:600;color:#0ea5e9;direction:ltr;font-family:monospace;background:#e0f2fe;padding:10px 12px;border-radius:8px;border:1px solid #0ea5e920;text-align:center;letter-spacing:.3px">
 MDI = (Saud×0.25 + V2030×0.25 + O*NET×0.15 + Council×0.15 + Local×0.15 + Free×0.05 − 1) × 25
 </div>
 </div>
@@ -509,7 +559,7 @@ MDI = (Saud×0.25 + V2030×0.25 + O*NET×0.15 + Council×0.15 + Local×0.15 + Fr
 </div>
 <div class="accordion">
 <div class="accordion-head" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">
-<div><div class="acc-title" style="color:#4e7d96;font-size:14px">تفاصيل عوامل العرض — سُلّم التقييم</div><div style="font-size:10px;color:var(--text3);margin-top:2px">اضغط لعرض معايير الدرجات 1–5 لكل عامل</div></div>
+<div><div class="acc-title" style="color:#3b82f6;font-size:14px">تفاصيل عوامل العرض — سُلّم التقييم</div><div style="font-size:10px;color:var(--text3);margin-top:2px">اضغط لعرض معايير الدرجات 1–5 لكل عامل</div></div>
 <span class="acc-arrow">▼</span>
 </div>
 <div class="accordion-body">
@@ -536,8 +586,8 @@ MDI = (Saud×0.25 + V2030×0.25 + O*NET×0.15 + Council×0.15 + Local×0.15 + Fr
 <div class="tab-content" id="tab-demand">
 <div class="page-header">
 <div>
-<div class="page-title">جانب الطلب — MDI</div>
-<div class="page-sub">6 عوامل مرجّحة × درجات 1–5 = مؤشر الطلب في سوق العمل (0–100)</div>
+<div class="page-title">جانب الطلب — Market Demand Index</div>
+<div class="page-sub">مؤشر طلب السوق MDI · 6 عوامل مرجّحة × درجات 1–5 = مؤشر 0–100 · <strong style="color:#0ea5e9">المحدد الوحيد لترتيب الأولويات</strong></div>
 </div>
 </div>
 <div class="section">
@@ -562,7 +612,7 @@ MDI = (Saud×0.25 + V2030×0.25 + O*NET×0.15 + Council×0.15 + Local×0.15 + Fr
 <th class="factor-col">O*NET<br><span style="font-weight:400;opacity:.5">15%</span></th>
 <th class="factor-col">المجالس<br><span style="font-weight:400;opacity:.5">15%</span></th>
 <th class="factor-col">السوق<br><span style="font-weight:400;opacity:.5">15%</span></th>
-<th class="factor-col">حر<br><span style="font-weight:400;opacity:.5">5%</span></th>
+<th class="factor-col">العمل الحر<br><span style="font-weight:400;opacity:.5">5%</span></th>
 <th style="min-width:90px;background:rgba(15,110,86,.06)">MDI</th>
 <th style="min-width:80px">الأولوية</th>
 </tr>
@@ -594,8 +644,17 @@ MDI = (Saud×0.25 + V2030×0.25 + O*NET×0.15 + Council×0.15 + Local×0.15 + Fr
 <div class="tab-content" id="tab-supply">
 <div class="page-header">
 <div>
-<div class="page-title">جانب العرض — SFS</div>
-<div class="page-sub">3 عوامل: توفر المدربين (40%) · تعقيد التجهيزات (35%) · سرعة التنفيذ (25%)</div>
+<div class="page-title">جانب العرض — مؤشر جاهزية العرض SFS</div>
+<div class="page-sub">Supply Feasibility Score · 3 عوامل: توفر المدربين (40%) · تعقيد التجهيزات (35%) · سرعة التنفيذ (25%)</div>
+</div>
+</div>
+
+<!-- Informational Banner -->
+<div style="padding:14px 20px;border-radius:12px;background:linear-gradient(135deg,#fef3c7,#fef3c733);border:1px solid #f59e0b30;margin-bottom:1rem;display:flex;gap:14px;align-items:center">
+<div style="width:36px;height:36px;border-radius:10px;background:#f59e0b;color:white;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0">ℹ</div>
+<div>
+<div style="font-size:13px;font-weight:700;color:#92400e;margin-bottom:2px">للمعلومية فقط — لا يؤثر على ترتيب الأولويات</div>
+<div style="font-size:11px;color:#92400e;line-height:1.7;opacity:.9">مؤشر العرض (SFS) يُعرض هنا لأغراض التخطيط والميزانية فقط. الأولوية بين البرامج تُحدَّد حصراً بناءً على مؤشر الطلب (MDI). يُستخدم SFS لاحقاً لتخطيط مراحل التنفيذ وتحديد الموارد المطلوبة.</div>
 </div>
 </div>
 <div class="section">
@@ -607,9 +666,9 @@ MDI = (Saud×0.25 + V2030×0.25 + O*NET×0.15 + Council×0.15 + Local×0.15 + Fr
 <th>#</th>
 <th style="min-width:200px">البرنامج</th>
 <th>القسم</th>
-<th style="background:#0d737708">المدربون</th>
-<th style="background:#0d737708">أعلى مؤهل</th>
-<th style="background:#0d737708">المعامل</th>
+<th style="background:#0ea5e908">المدربون</th>
+<th style="background:#0ea5e908">أعلى مؤهل</th>
+<th style="background:#0ea5e908">المعامل</th>
 <th style="background:#C5A55A08">التجهيزات</th>
 <th style="background:#C5A55A08">الحالة</th>
 <th>البنية</th>
@@ -622,9 +681,9 @@ MDI = (Saud×0.25 + V2030×0.25 + O*NET×0.15 + Council×0.15 + Local×0.15 + Fr
 <td></td>
 <td style="text-align:right">اسم البرنامج التدريبي</td>
 <td style="text-align:right">القسم المسؤول</td>
-<td style="background:#0d737708">عدد المدربين المتاحين</td>
-<td style="background:#0d737708">أعلى مؤهل متوفر</td>
-<td style="background:#0d737708">عدد المعامل المطلوبة</td>
+<td style="background:#0ea5e908">عدد المدربين المتاحين</td>
+<td style="background:#0ea5e908">أعلى مؤهل متوفر</td>
+<td style="background:#0ea5e908">عدد المعامل المطلوبة</td>
 <td style="background:#C5A55A08">عدد الأصناف المطلوبة</td>
 <td style="background:#C5A55A08">مكتمل أم معلّق</td>
 <td>نوع البنية التحتية</td>
@@ -680,31 +739,72 @@ MDI = (Saud×0.25 + V2030×0.25 + O*NET×0.15 + Council×0.15 + Local×0.15 + Fr
 </div>
 </div>
 
-<!-- ===================== MATRIX TAB ===================== -->
+<!-- ===================== PRIORITY RANKING TAB ===================== -->
 <div class="tab-content" id="tab-matrix">
+
 <div class="page-header">
 <div>
-<div class="page-title">مصفوفة الأولويات — الطلب × العرض</div>
-<div class="page-sub">MDI (أفقي) × SFS (رأسي) = 4 أرباع قرار</div>
+<div class="page-title">ترتيب الأولويات</div>
+<div class="page-sub">البرامج المرشحة مرتّبة حسب مؤشر الطلب (MDI) — الأولوية تُحدَّد حصراً بناءً على الطلب</div>
 </div>
 </div>
+
+<!-- Tier Summary Cards -->
+<div class="section" style="margin-bottom:1rem">
+<div class="section-body" style="padding:1.25rem">
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px">
+<div style="padding:16px;border-radius:12px;background:#e0f2fe;border:1px solid #0ea5e930">
+<div style="font-size:10px;font-weight:700;letter-spacing:1px;color:#0ea5e9;text-transform:uppercase">T1 · أولوية عليا</div>
+<div style="font-size:36px;font-weight:800;color:#0ea5e9;line-height:1;margin:6px 0" id="t1-count">0</div>
+<div style="font-size:10.5px;color:#0ea5e9;opacity:.8">MDI ≥ 80 · إطلاق فوري</div>
+</div>
+<div style="padding:16px;border-radius:12px;background:#dbeafe;border:1px solid #3b82f630">
+<div style="font-size:10px;font-weight:700;letter-spacing:1px;color:#3b82f6;text-transform:uppercase">T2 · أولوية عالية</div>
+<div style="font-size:36px;font-weight:800;color:#3b82f6;line-height:1;margin:6px 0" id="t2-count">0</div>
+<div style="font-size:10.5px;color:#3b82f6;opacity:.8">MDI 65–79 · توصية بالإطلاق</div>
+</div>
+<div style="padding:16px;border-radius:12px;background:#fef3c7;border:1px solid #f59e0b30">
+<div style="font-size:10px;font-weight:700;letter-spacing:1px;color:#f59e0b;text-transform:uppercase">T3 · أولوية متوسطة</div>
+<div style="font-size:36px;font-weight:800;color:#f59e0b;line-height:1;margin:6px 0" id="t3-count">0</div>
+<div style="font-size:10.5px;color:#f59e0b;opacity:.8">MDI 50–64 · مراجعة لاحقة</div>
+</div>
+<div style="padding:16px;border-radius:12px;background:#fee2e2;border:1px solid #ef444430">
+<div style="font-size:10px;font-weight:700;letter-spacing:1px;color:#ef4444;text-transform:uppercase">T4 · أولوية منخفضة</div>
+<div style="font-size:36px;font-weight:800;color:#ef4444;line-height:1;margin:6px 0" id="t4-count">0</div>
+<div style="font-size:10.5px;color:#ef4444;opacity:.8">MDI &lt; 50 · يُعاد التقييم</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Priority Ranking Chart -->
 <div class="section">
-<div class="section-body" style="padding:1.5rem">
-<!-- Axis wrapper grid -->
-<div style="display:grid;grid-template-columns:36px 1fr;grid-template-rows:1fr 36px;gap:0">
-<!-- Y-axis label -->
-<div style="writing-mode:vertical-rl;transform:rotate(180deg);text-align:center;font-size:13px;font-weight:700;color:#4e7d96;display:flex;align-items:center;justify-content:center;letter-spacing:.5px">↑ جاهزية العرض (SFS)</div>
-<!-- Chart -->
-<div id="matrix-container" style="position:relative;width:100%;padding-bottom:65%;direction:ltr;border-radius:12px;overflow:visible;background:#fafbfc;border:1px solid var(--border)">
+<div class="section-head">
+<div class="section-title">التصنيف الكامل — 43 برنامج مرتّب حسب MDI</div>
+<div class="section-sub">كل شريط يمثّل برنامجاً · الطول = قيمة MDI · اللون = فئة الأولوية · يمكن تصفية بالقسم</div>
 </div>
-<!-- Empty corner -->
-<div></div>
-<!-- X-axis label -->
-<div style="text-align:center;font-size:13px;font-weight:700;color:#0d7377;padding-top:8px;letter-spacing:.5px">مؤشر الطلب (MDI) →</div>
+<div class="section-body" style="padding:1.25rem">
+
+<!-- Filter -->
+<div style="display:flex;gap:10px;align-items:center;margin-bottom:1rem;flex-wrap:wrap">
+<div style="font-size:11px;font-weight:600;color:var(--text)">تصفية:</div>
+<select id="rank-tier-filter" onchange="renderRanking()" style="padding:7px 12px;border:1px solid var(--border);border-radius:8px;font-family:inherit;font-size:11.5px;background:var(--card);cursor:pointer">
+<option value="all">جميع الفئات</option>
+<option value="T1">T1 — أولوية عليا</option>
+<option value="T2">T2 — أولوية عالية</option>
+<option value="T3">T3 — أولوية متوسطة</option>
+<option value="T4">T4 — أولوية منخفضة</option>
+</select>
+<select id="rank-dept-filter" onchange="renderRanking()" style="padding:7px 12px;border:1px solid var(--border);border-radius:8px;font-family:inherit;font-size:11.5px;background:var(--card);cursor:pointer;min-width:180px">
+<option value="all">جميع الأقسام</option>
+</select>
+<div id="rank-count" style="font-size:11px;color:var(--text3);margin-inline-start:auto"></div>
 </div>
-<div style="display:flex;gap:20px;margin-top:16px;font-size:12px;justify-content:center" id="matrix-legend"></div>
+
+<div id="priority-ranking-chart" style="display:flex;flex-direction:column;gap:6px"></div>
 </div>
 </div>
+
 </div>
 
 <!-- ===================== DETAIL TAB ===================== -->
@@ -725,36 +825,99 @@ MDI = (Saud×0.25 + V2030×0.25 + O*NET×0.15 + Council×0.15 + Local×0.15 + Fr
 
 <!-- ===================== GOVERNANCE TAB ===================== -->
 <div class="tab-content" id="tab-governance">
-<div style="background:#f3f5f8;border-radius:12px;padding:1.5rem;margin-bottom:0;min-height:60vh">
+
 <div class="page-header">
 <div>
-<div class="page-title" style="color:#6b7280">الفجوات والملاحظات</div>
+<div class="page-title">سياسة الاستخدام</div>
+<div class="page-sub">الإطار التنظيمي والقانوني لاستخدام أداة تقييم البرامج والبيانات المتاحة من خلالها</div>
+</div>
+</div>
+
+<!-- Policy Sections — light grey text -->
+<div style="display:flex;flex-direction:column;gap:12px">
+
+<div class="section"><div class="section-body" style="padding:1.25rem 1.5rem">
+<div style="font-size:13px;font-weight:600;color:#64748b;margin-bottom:10px;display:flex;align-items:center;gap:8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> طبيعة البيانات وحدود الاستخدام</div>
+<div style="font-size:11.5px;color:#94a3b8;line-height:2">تعتمد هذه الأداة على بيانات مستخرجة من مصادر رسمية تشمل الهيئة العامة للإحصاء (GASTAT) ومنصة جدارات وقرارات التوطين وقواعد بيانات المجالس القطاعية للمهارات. تُعرض لأغراض التحليل الداخلي واتخاذ القرار المؤسسي حصراً. البيانات المعروضة تمثّل لقطة زمنية محددة وقد لا تعكس الوضع الراهن. لا يجوز اعتبار أي مؤشر أو تصنيف بمثابة تقييم رسمي أو نهائي.</div>
+<div style="font-size:11.5px;color:#94a3b8;line-height:2;margin-top:6px">يُحسب مؤشر الطلب (MDI) وفق نموذج ترجيح محدد (6 عوامل × أوزان) ولا يمثّل بالضرورة منهجية التقييم الرسمية المعتمدة. مؤشر العرض (SFS) يُعرض للمعلومية والتخطيط فقط ولا يؤثر على ترتيب الأولويات.</div>
+</div></div>
+
+<div class="section"><div class="section-body" style="padding:1.25rem 1.5rem">
+<div style="font-size:13px;font-weight:600;color:#64748b;margin-bottom:10px;display:flex;align-items:center;gap:8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> سياسة البيانات المفتوحة — المؤسسة العامة للتدريب التقني والمهني</div>
+<div style="font-size:11.5px;color:#94a3b8;line-height:2;margin-bottom:8px">وفقاً لسياسة البيانات المفتوحة الصادرة عن المؤسسة، يلتزم مستخدمو هذه الأداة بالآتي:</div>
+<div style="background:#f8fafc;border-radius:8px;padding:12px 16px;font-size:11px;color:#94a3b8;line-height:2.2;border-right:3px solid #e2e8f0">
+<div>• الإشارة إلى المصدر (المؤسسة العامة للتدريب التقني والمهني) عند استخدام أو نشر أي بيانات</div>
+<div>• عدم تحريف البيانات أو تحريف مصدرها أو استخدامها بما يُضلل الآخرين</div>
+<div>• عدم استخدام البيانات لأغراض سياسية أو دعم أي نشاط غير مشروع أو إجرامي</div>
+<div>• عدم توظيف البيانات في تعليقات عنصرية أو تمييزية أو لأغراض التأجيج</div>
+<div>• عدم استخدام البيانات في أي نشاط غير نظامي أو مخالف للأعراف والتقاليد الوطنية</div>
+</div>
+<div style="font-size:10px;color:#cbd5e1;margin-top:8px">المرجع: بوابة البيانات المفتوحة — tvtc.gov.sa/open-data</div>
+</div></div>
+
+<div class="section"><div class="section-body" style="padding:1.25rem 1.5rem">
+<div style="font-size:13px;font-weight:600;color:#64748b;margin-bottom:10px;display:flex;align-items:center;gap:8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="1.5"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/></svg> نظام حماية البيانات الشخصية (PDPL)</div>
+<div style="font-size:11.5px;color:#94a3b8;line-height:2">تلتزم هذه الأداة بأحكام نظام حماية البيانات الشخصية الصادر بالمرسوم الملكي رقم (م/19) بتاريخ 1443/2/9هـ المعدّل بالمرسوم الملكي رقم (م/148) بتاريخ 1444/9/5هـ، ولائحته التنفيذية الصادرة عن هيئة البيانات والذكاء الاصطناعي (سدايا)، والذي أصبح نافذاً بالكامل اعتباراً من 14 سبتمبر 2024م.</div>
+<div style="font-size:11.5px;color:#94a3b8;line-height:2;margin-top:6px">البيانات المعروضة هي بيانات إحصائية مجمّعة على مستوى البرنامج والقطاع، ولا تتضمن أي بيانات شخصية. في حال تضمّن أي تقرير مُصدَّر معلومات قابلة للربط بأفراد، يتعيّن الالتزام بمتطلبات النظام المتعلقة بالإفصاح والمعالجة والحفظ والإتلاف.</div>
+</div></div>
+
+<div class="section"><div class="section-body" style="padding:1.25rem 1.5rem">
+<div style="font-size:13px;font-weight:600;color:#64748b;margin-bottom:10px;display:flex;align-items:center;gap:8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="1.5"><path d="M4 15s1-1 4-1 4 2 8 2 8-1 4-1"/><line x1="2" y1="2" x2="22" y2="22"/></svg> الملكية الفكرية</div>
+<div style="font-size:11.5px;color:#94a3b8;line-height:2">جميع البيانات الواردة مملوكة للمؤسسة العامة للتدريب التقني والمهني. منهجية التقييم (مؤشر MDI ونموذج الترجيح) وتصميم الأداة تخضع لحقوق الملكية الفكرية. لا يجوز النسخ أو إعادة الإنتاج أو التوزيع — كلياً أو جزئياً — لأغراض تجارية دون إذن كتابي مسبق.</div>
+</div></div>
+
+<div class="section"><div class="section-body" style="padding:1.25rem 1.5rem">
+<div style="font-size:13px;font-weight:600;color:#64748b;margin-bottom:10px;display:flex;align-items:center;gap:8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> حدود المسؤولية</div>
+<div style="font-size:11.5px;color:#94a3b8;line-height:2">تُقدَّم هذه الأداة «كما هي» دون أي ضمانات صريحة أو ضمنية بشأن الدقة أو الاكتمال. لا تتحمّل الجهة المطوّرة أي مسؤولية عن القرارات المتخذة بناءً على البيانات المعروضة. يُوصى بالتحقق من البيانات من مصادرها الأولية قبل اعتماد أي إجراءات. قد تتأثر دقة المؤشرات بجودة البيانات المصدرية وتوقيت جمعها والمنهجيات الإحصائية المطبّقة.</div>
+</div></div>
+
+<div class="section"><div class="section-body" style="padding:1.25rem 1.5rem">
+<div style="font-size:13px;font-weight:600;color:#64748b;margin-bottom:10px;display:flex;align-items:center;gap:8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg> الإطار التنظيمي المرجعي</div>
+<div style="background:#f8fafc;border-radius:8px;padding:12px 16px;font-size:11px;color:#94a3b8;line-height:2.2;border-right:3px solid #e2e8f0">
+<div>• نظام حماية البيانات الشخصية — المرسوم الملكي رقم (م/19) لعام 1443هـ ولائحته التنفيذية</div>
+<div>• سياسة البيانات المفتوحة — المؤسسة العامة للتدريب التقني والمهني</div>
+<div>• الضوابط الأساسية للأمن السيبراني (ECC) — الهيئة الوطنية للأمن السيبراني</div>
+<div>• الإطار السعودي لكوادر الأمن السيبراني (سيوف) — الهيئة الوطنية للأمن السيبراني</div>
+<div>• معايير هيئة تقويم التعليم والتدريب (ETEC) للاعتماد المؤسسي والبرامجي</div>
+<div>• الإطار الوطني للمؤهلات (NQF) — المملكة العربية السعودية</div>
+<div>• قرار مجلس الوزراء رقم (268) لعام 1428هـ — تنظيم المؤسسة العامة للتدريب التقني والمهني</div>
+<div>• رؤية المملكة العربية السعودية 2030 — محور تطوير رأس المال البشري</div>
+</div>
+</div></div>
 
 </div>
+
+<div style="text-align:center;padding:1.25rem;margin-top:.75rem">
+<div style="font-size:10px;color:#cbd5e1;letter-spacing:.5px">آخر تحديث: أبريل 2026 — الإصدار 1.0</div>
 </div>
-<div id="alerts-container"></div>
-</div>
+
 <div class="footer-note">المؤسسة العامة للتدريب التقني والمهني · إطار تقييم الطلب · أبريل 2026</div>
 </div>
 </div>
 
 <script>
-const PROGRAMS=[{id:1,name:"تقنية الذكاء الاصطناعي وتعلم الآلة",dept:"الحاسب وتقنية المعلومات",gateV:true,gateS:false,mdi:80,sfs:50,quad:"Q1",mdiFact:[4,5,5,4,3,3],sfsFact:[3,3,3],council:"الرقمي",infra:"ورشة متخصصة",trainers:6,maxQual:"بكالوريوس",labs:6,equip:26,equipPend:false},{id:2,name:"التكنولوجيا المالية",dept:"التقنية المالية",gateV:true,gateS:false,mdi:70,sfs:76,quad:"Q1",mdiFact:[3,5,4,4,3,3],sfsFact:[5,3,4],council:"الخدمات المالية",infra:"ورشة متخصصة",trainers:1,maxQual:"بكالوريوس",labs:2,equip:16,equipPend:false},{id:3,name:"تقنية اللحام",dept:"التقنية الميكانيكية",gateV:true,gateS:true,mdi:77,sfs:26,quad:"Q2",mdiFact:[5,4,3,4,5,1],sfsFact:[3,1,2],council:"الصناعة التحويلية",infra:"ورشة صناعية ثقيلة",trainers:7,maxQual:"بكالوريوس",labs:8,equip:252,equipPend:false},{id:4,name:"تقنية الصيانة الكهربائية",dept:"التقنية الكهربائية",gateV:true,gateS:true,mdi:68,sfs:50,quad:"Q1",mdiFact:[5,4,3,3,3,2],sfsFact:[3,3,3],council:"الطاقة والمرافق",infra:"ورشة متخصصة",trainers:3,maxQual:"بكالوريوس",labs:4,equip:141,equipPend:false},{id:5,name:"تقنية المعلومات الصحية",dept:"التقنيات الصحية",gateV:false,gateS:true,mdi:76,sfs:76,quad:"Q1",mdiFact:[5,3,4,4,5,2],sfsFact:[5,3,4],council:"الصحة",infra:"ورشة متخصصة",trainers:1,maxQual:"بكالوريوس",labs:1,equip:8,equipPend:false},{id:6,name:"أنظمة الطاقة والشبكات الكهربائية الذكية",dept:"التقنية الكهربائية",gateV:true,gateS:false,mdi:78,sfs:75,quad:"Q1",mdiFact:[3,5,4,4,3,2],sfsFact:[4,3,4],council:"الطاقة والمرافق",infra:"ورشة متخصصة",trainers:2,maxQual:"بكالوريوس",labs:9,equip:226,equipPend:false},{id:7,name:"تقنية الإدارة الصحية",dept:"التقنيات الصحية",gateV:false,gateS:true,mdi:72,sfs:60,quad:"Q1",mdiFact:[5,3,3,4,5,2],sfsFact:[4,3,3],council:"الصحة",infra:"ورشة متخصصة",trainers:1,maxQual:"ماجستير",labs:1,equip:8,equipPend:false},{id:8,name:"تقنية المركبات الكهربائية والهجينة",dept:"التقنية الميكانيكية",gateV:true,gateS:false,mdi:71,sfs:0,quad:"Q2",mdiFact:[3,5,4,3,5,1],sfsFact:[1,1,1],council:"—",infra:"ورشة صناعية ثقيلة",trainers:4,maxQual:"بكالوريوس",labs:10,equip:225,equipPend:false},{id:9,name:"تقنية معالجة المياه",dept:"تقنية البيئة",gateV:true,gateS:true,mdi:60,sfs:50,quad:"Q3",mdiFact:[4,4,3,3,3,1],sfsFact:[3,3,3],council:"الطاقة والمرافق",infra:"ورشة متخصصة",trainers:5,maxQual:"بكالوريوس",labs:10,equip:127,equipPend:false},{id:10,name:"تقنية التحول الرقمي",dept:"الابتكار الرقمي",gateV:true,gateS:false,mdi:75,sfs:60,quad:"Q1",mdiFact:[3,5,4,3,3,3],sfsFact:[4,3,3],council:"الرقمي",infra:"ورشة متخصصة",trainers:3,maxQual:"بكالوريوس",labs:2,equip:11,equipPend:false},{id:11,name:"صيانة الطائرات بدون طيار",dept:"التقنية الإلكترونية",gateV:true,gateS:false,mdi:73,sfs:24,quad:"Q2",mdiFact:[3,5,4,3,3,2],sfsFact:[1,3,2],council:"الرقمي",infra:"ورشة متخصصة",trainers:6,maxQual:"بكالوريوس",labs:9,equip:194,equipPend:false},{id:12,name:"تقنية التحليل المالي",dept:"التقنية المالية",gateV:false,gateS:false,mdi:57,sfs:76,quad:"Q3",mdiFact:[3,3,4,4,3,3],sfsFact:[5,3,4],council:"الخدمات المالية",infra:"ورشة متخصصة",trainers:0,maxQual:"بكالوريوس",labs:1,equip:25,equipPend:false},{id:13,name:"عمليات الشحن والنقل",dept:"تقنية الموانئ واللوجستيات",gateV:true,gateS:false,mdi:72,sfs:74,quad:"Q1",mdiFact:[3,4,3,4,4,2],sfsFact:[3,5,4],council:"الخدمات اللوجستية",infra:"معمل حاسب",trainers:6,maxQual:"بكالوريوس",labs:6,equip:28,equipPend:false},{id:14,name:"تصميم وإدارة قواعد البيانات",dept:"الحاسب وتقنية المعلومات",gateV:true,gateS:false,mdi:72,sfs:35,quad:"Q2",mdiFact:[3,4,4,4,3,3],sfsFact:[3,2,2],council:"الرقمي",infra:"ورشة متخصصة",trainers:5,maxQual:"بكالوريوس",labs:8,equip:67,equipPend:false},{id:15,name:"تصميم الرسوم المتحركة",dept:"تقنية الإنتاج الإعلامي",gateV:true,gateS:false,mdi:70,sfs:90,quad:"Q1",mdiFact:[2,5,4,3,3,3],sfsFact:[4,5,5],council:"الثقافة والترفيه",infra:"معمل حاسب",trainers:4,maxQual:"بكالوريوس",labs:6,equip:54,equipPend:false},{id:16,name:"التبريد الصناعي والتجاري",dept:"التقنية الميكانيكية",gateV:false,gateS:true,mdi:61,sfs:36,quad:"Q4",mdiFact:[4,3,3,3,5,1],sfsFact:[4,1,2],council:"الصناعة التحويلية",infra:"ورشة صناعية ثقيلة",trainers:4,maxQual:"بكالوريوس",labs:4,equip:41,equipPend:false},{id:17,name:"أنظمة الأجهزة الذكية",dept:"التقنية الإلكترونية",gateV:true,gateS:false,mdi:68,sfs:60,quad:"Q1",mdiFact:[3,4,4,3,3,2],sfsFact:[4,3,3],council:"الرقمي",infra:"ورشة متخصصة",trainers:4,maxQual:"—",labs:13,equip:274,equipPend:false},{id:18,name:"التحليل الائتماني",dept:"التقنية المالية",gateV:false,gateS:false,mdi:52,sfs:74,quad:"Q3",mdiFact:[3,3,3,4,3,2],sfsFact:[3,5,4],council:"الخدمات المالية",infra:"معمل حاسب",trainers:5,maxQual:"ماجستير",labs:0,equip:0,equipPend:false},{id:19,name:"الإعلام الرقمي",dept:"تقنية الإنتاج الإعلامي",gateV:true,gateS:false,mdi:54,sfs:74,quad:"Q3",mdiFact:[2,4,4,3,3,3],sfsFact:[3,5,4],council:"الثقافة والترفيه",infra:"معمل حاسب",trainers:5,maxQual:"بكالوريوس",labs:7,equip:107,equipPend:false},{id:20,name:"نظم المعلومات الإدارية",dept:"تقنية الأعمال",gateV:false,gateS:false,mdi:48,sfs:100,quad:"Q3",mdiFact:[2,3,4,3,3,3],sfsFact:[5,5,5],council:"الخدمات المهنية",infra:"معمل حاسب",trainers:1,maxQual:"بكالوريوس",labs:2,equip:22,equipPend:false},{id:21,name:"إدارة النفايات",dept:"تقنية البيئة",gateV:true,gateS:false,mdi:65,sfs:35,quad:"Q2",mdiFact:[3,4,3,3,3,1],sfsFact:[3,2,2],council:"الطاقة والمرافق",infra:"ورشة متخصصة",trainers:1,maxQual:"بكالوريوس",labs:4,equip:77,equipPend:false},{id:22,name:"صناعة الأفلام",dept:"تقنية الإنتاج الإعلامي",gateV:true,gateS:false,mdi:65,sfs:24,quad:"Q2",mdiFact:[2,5,3,3,3,2],sfsFact:[1,3,2],council:"الثقافة والترفيه",infra:"ورشة متخصصة",trainers:4,maxQual:"بكالوريوس",labs:7,equip:79,equipPend:false},{id:23,name:"الألعاب الرقمية",dept:"الحاسب وتقنية المعلومات",gateV:true,gateS:false,mdi:65,sfs:35,quad:"Q2",mdiFact:[2,4,4,3,3,3],sfsFact:[3,2,2],council:"الرقمي",infra:"ورشة متخصصة",trainers:7,maxQual:"بكالوريوس",labs:6,equip:58,equipPend:false},{id:24,name:"التصميم الحضري",dept:"تقنية التشييد والبناء",gateV:true,gateS:false,mdi:56,sfs:48,quad:"Q4",mdiFact:[2,4,3,3,5,2],sfsFact:[1,5,3],council:"التشييد والعقارات",infra:"معمل حاسب",trainers:4,maxQual:"دكتوراه",labs:0,equip:0,equipPend:false},{id:25,name:"تصميم الواقع الافتراضي",dept:"الابتكار الرقمي",gateV:true,gateS:false,mdi:62,sfs:60,quad:"Q3",mdiFact:[2,4,4,3,3,2],sfsFact:[4,3,3],council:"الرقمي",infra:"ورشة متخصصة",trainers:3,maxQual:"بكالوريوس",labs:3,equip:16,equipPend:false},{id:26,name:"إدارة الكوارث والحرائق",dept:"تقنية البيئة",gateV:false,gateS:false,mdi:62,sfs:35,quad:"Q4",mdiFact:[3,3,3,3,4,1],sfsFact:[3,2,2],council:"الخدمات الأمنية",infra:"ورشة متخصصة",trainers:6,maxQual:"بكالوريوس",labs:5,equip:70,equipPend:false},{id:27,name:"إدارة المحميات",dept:"تقنية البيئة",gateV:true,gateS:false,mdi:60,sfs:40,quad:"Q4",mdiFact:[2,4,3,3,3,1],sfsFact:[2,3,3],council:"الطاقة والمرافق",infra:"ورشة متخصصة",trainers:3,maxQual:"بكالوريوس",labs:10,equip:79,equipPend:false},{id:28,name:"السلامة العامة للسفن",dept:"التقنية البحرية",gateV:false,gateS:true,mdi:51,sfs:40,quad:"Q4",mdiFact:[4,2,3,3,4,1],sfsFact:[2,3,3],council:"الخدمات اللوجستية",infra:"ورشة متخصصة",trainers:4,maxQual:"بكالوريوس",labs:4,equip:36,equipPend:false},{id:29,name:"ترميم الوثائق والمخطوطات",dept:"تقنية العمارة والتصميم",gateV:true,gateS:false,mdi:58,sfs:24,quad:"Q4",mdiFact:[2,4,2,2,3,1],sfsFact:[1,3,2],council:"الثقافة والترفيه",infra:"ورشة متخصصة",trainers:5,maxQual:"—",labs:7,equip:64,equipPend:false},{id:30,name:"الرصد والتنبؤ البيئي",dept:"التقنية الزراعية والبيئية",gateV:true,gateS:false,mdi:58,sfs:60,quad:"Q3",mdiFact:[2,4,3,3,3,1],sfsFact:[4,3,3],council:"الطاقة والمرافق",infra:"ورشة متخصصة",trainers:2,maxQual:"بكالوريوس",labs:4,equip:28,equipPend:false},{id:31,name:"التصوير الضوئي",dept:"تقنية الإنتاج الإعلامي",gateV:true,gateS:false,mdi:58,sfs:60,quad:"Q3",mdiFact:[2,4,3,3,3,2],sfsFact:[4,3,3],council:"الثقافة والترفيه",infra:"ورشة متخصصة",trainers:4,maxQual:"بكالوريوس",labs:6,equip:88,equipPend:false},{id:32,name:"سلسلة كتل البيانات",dept:"الحاسب وتقنية المعلومات",gateV:false,gateS:false,mdi:58,sfs:40,quad:"Q4",mdiFact:[2,3,4,3,3,2],sfsFact:[2,3,3],council:"الرقمي",infra:"ورشة متخصصة",trainers:3,maxQual:"بكالوريوس",labs:3,equip:27,equipPend:false},{id:33,name:"صيانة الأجهزة الإلكترونية الذكية",dept:"التقنية الإلكترونية",gateV:false,gateS:false,mdi:55,sfs:10,quad:"Q4",mdiFact:[2,3,3,3,3,2],sfsFact:[1,1,1],council:"الرقمي",infra:"—",trainers:0,maxQual:"—",labs:0,equip:0,equipPend:false},{id:34,name:"الأطراف الاصطناعية",dept:"التقنيات الصحية",gateV:false,gateS:false,mdi:50,sfs:25,quad:"Q4",mdiFact:[2,3,3,3,5,2],sfsFact:[2,2,2],council:"الصحة",infra:"ورشة متخصصة",trainers:2,maxQual:"بكالوريوس",labs:9,equip:51,equipPend:false},{id:35,name:"الإنتاج الصوتي",dept:"تقنية الإنتاج الإعلامي",gateV:false,gateS:false,mdi:55,sfs:50,quad:"Q3",mdiFact:[2,3,3,3,3,2],sfsFact:[3,3,3],council:"الثقافة والترفيه",infra:"ورشة متخصصة",trainers:4,maxQual:"بكالوريوس",labs:5,equip:59,equipPend:false},{id:36,name:"الجيولوجيا التطبيقية",dept:"تقنية البيئة",gateV:false,gateS:false,mdi:55,sfs:50,quad:"Q3",mdiFact:[2,3,3,3,3,1],sfsFact:[3,3,3],council:"الطاقة والمرافق",infra:"ورشة متخصصة",trainers:5,maxQual:"بكالوريوس",labs:8,equip:40,equipPend:false},{id:37,name:"الاستزراع السمكي",dept:"تقنية الغذاء",gateV:false,gateS:false,mdi:52,sfs:24,quad:"Q4",mdiFact:[2,3,3,2,3,1],sfsFact:[1,3,2],council:"—",infra:"ورشة متخصصة",trainers:3,maxQual:"ماجستير",labs:0,equip:0,equipPend:false},{id:38,name:"صيانة القوارب والسفن",dept:"التقنية البحرية",gateV:false,gateS:false,mdi:38,sfs:10,quad:"Q4",mdiFact:[2,3,2,2,4,1],sfsFact:[2,1,1],council:"الخدمات اللوجستية",infra:"ورشة صناعية ثقيلة",trainers:5,maxQual:"بكالوريوس",labs:6,equip:43,equipPend:false},{id:39,name:"التصميم والطباعة الرقمية",dept:"تقنية الإنتاج الإعلامي",gateV:false,gateS:false,mdi:50,sfs:10,quad:"Q4",mdiFact:[2,3,3,2,3,2],sfsFact:[1,1,1],council:"الثقافة والترفيه",infra:"—",trainers:0,maxQual:"—",labs:0,equip:0,equipPend:false},{id:40,name:"تقنيات زراعية",dept:"التقنية الزراعية والبيئية",gateV:false,gateS:false,mdi:48,sfs:10,quad:"Q4",mdiFact:[2,3,2,2,3,1],sfsFact:[1,1,1],council:"—",infra:"—",trainers:0,maxQual:"—",labs:0,equip:0,equipPend:false},{id:41,name:"كهرباء السفن",dept:"التقنية البحرية",gateV:false,gateS:false,mdi:35,sfs:10,quad:"Q4",mdiFact:[2,2,3,2,4,1],sfsFact:[1,1,1],council:"الخدمات اللوجستية",infra:"—",trainers:0,maxQual:"—",labs:0,equip:0,equipPend:false},{id:42,name:"الفن التشكيلي والحرفي",dept:"تقنية العمارة والتصميم",gateV:true,gateS:false,mdi:45,sfs:50,quad:"Q3",mdiFact:[1,3,2,2,3,2],sfsFact:[3,3,3],council:"الثقافة والترفيه",infra:"ورشة متخصصة",trainers:3,maxQual:"بكالوريوس",labs:4,equip:36,equipPend:false},{id:43,name:"مكافحة التصحر",dept:"التقنية الزراعية والبيئية",gateV:false,gateS:false,mdi:42,sfs:10,quad:"Q4",mdiFact:[1,2,2,2,3,1],sfsFact:[1,1,1],council:"—",infra:"—",trainers:0,maxQual:"—",labs:0,equip:0,equipPend:false}];
+const PROGRAMS=[{id:1,name:"تقنية الذكاء الاصطناعي وتعلم الآلة",dept:"الحاسب وتقنية المعلومات",gateV:true,gateS:false,mdi:80,sfs:50,quad:"T1",mdiFact:[4,5,5,4,3,3],sfsFact:[3,3,3],council:"الرقمي",infra:"ورشة متخصصة",trainers:6,maxQual:"بكالوريوس",labs:6,equip:26,equipPend:false},{id:2,name:"التكنولوجيا المالية",dept:"التقنية المالية",gateV:true,gateS:false,mdi:70,sfs:76,quad:"T2",mdiFact:[3,5,4,4,3,3],sfsFact:[5,3,4],council:"الخدمات المالية",infra:"ورشة متخصصة",trainers:1,maxQual:"بكالوريوس",labs:2,equip:16,equipPend:false},{id:3,name:"تقنية اللحام",dept:"التقنية الميكانيكية",gateV:true,gateS:true,mdi:77,sfs:26,quad:"T2",mdiFact:[5,4,3,4,5,1],sfsFact:[3,1,2],council:"الصناعة التحويلية",infra:"ورشة صناعية ثقيلة",trainers:7,maxQual:"بكالوريوس",labs:8,equip:252,equipPend:false},{id:4,name:"تقنية الصيانة الكهربائية",dept:"التقنية الكهربائية",gateV:true,gateS:true,mdi:68,sfs:50,quad:"T2",mdiFact:[5,4,3,3,3,2],sfsFact:[3,3,3],council:"الطاقة والمرافق",infra:"ورشة متخصصة",trainers:3,maxQual:"بكالوريوس",labs:4,equip:141,equipPend:false},{id:5,name:"تقنية المعلومات الصحية",dept:"التقنيات الصحية",gateV:false,gateS:true,mdi:76,sfs:76,quad:"T2",mdiFact:[5,3,4,4,5,2],sfsFact:[5,3,4],council:"الصحة",infra:"ورشة متخصصة",trainers:1,maxQual:"بكالوريوس",labs:1,equip:8,equipPend:false},{id:6,name:"أنظمة الطاقة والشبكات الكهربائية الذكية",dept:"التقنية الكهربائية",gateV:true,gateS:false,mdi:78,sfs:75,quad:"T2",mdiFact:[3,5,4,4,3,2],sfsFact:[4,3,4],council:"الطاقة والمرافق",infra:"ورشة متخصصة",trainers:2,maxQual:"بكالوريوس",labs:9,equip:226,equipPend:false},{id:7,name:"تقنية الإدارة الصحية",dept:"التقنيات الصحية",gateV:false,gateS:true,mdi:72,sfs:60,quad:"T2",mdiFact:[5,3,3,4,5,2],sfsFact:[4,3,3],council:"الصحة",infra:"ورشة متخصصة",trainers:1,maxQual:"ماجستير",labs:1,equip:8,equipPend:false},{id:8,name:"تقنية المركبات الكهربائية والهجينة",dept:"التقنية الميكانيكية",gateV:true,gateS:false,mdi:71,sfs:0,quad:"T2",mdiFact:[3,5,4,3,5,1],sfsFact:[1,1,1],council:"—",infra:"ورشة صناعية ثقيلة",trainers:4,maxQual:"بكالوريوس",labs:10,equip:225,equipPend:false},{id:9,name:"تقنية معالجة المياه",dept:"تقنية البيئة",gateV:true,gateS:true,mdi:60,sfs:50,quad:"T3",mdiFact:[4,4,3,3,3,1],sfsFact:[3,3,3],council:"الطاقة والمرافق",infra:"ورشة متخصصة",trainers:5,maxQual:"بكالوريوس",labs:10,equip:127,equipPend:false},{id:10,name:"تقنية التحول الرقمي",dept:"الابتكار الرقمي",gateV:true,gateS:false,mdi:75,sfs:60,quad:"T2",mdiFact:[3,5,4,3,3,3],sfsFact:[4,3,3],council:"الرقمي",infra:"ورشة متخصصة",trainers:3,maxQual:"بكالوريوس",labs:2,equip:11,equipPend:false},{id:11,name:"صيانة الطائرات بدون طيار",dept:"التقنية الإلكترونية",gateV:true,gateS:false,mdi:73,sfs:24,quad:"T2",mdiFact:[3,5,4,3,3,2],sfsFact:[1,3,2],council:"الرقمي",infra:"ورشة متخصصة",trainers:6,maxQual:"بكالوريوس",labs:9,equip:194,equipPend:false},{id:12,name:"تقنية التحليل المالي",dept:"التقنية المالية",gateV:false,gateS:false,mdi:57,sfs:76,quad:"T3",mdiFact:[3,3,4,4,3,3],sfsFact:[5,3,4],council:"الخدمات المالية",infra:"ورشة متخصصة",trainers:0,maxQual:"بكالوريوس",labs:1,equip:25,equipPend:false},{id:13,name:"عمليات الشحن والنقل",dept:"تقنية الموانئ واللوجستيات",gateV:true,gateS:false,mdi:72,sfs:74,quad:"T2",mdiFact:[3,4,3,4,4,2],sfsFact:[3,5,4],council:"الخدمات اللوجستية",infra:"معمل حاسب",trainers:6,maxQual:"بكالوريوس",labs:6,equip:28,equipPend:false},{id:14,name:"تصميم وإدارة قواعد البيانات",dept:"الحاسب وتقنية المعلومات",gateV:true,gateS:false,mdi:72,sfs:35,quad:"T2",mdiFact:[3,4,4,4,3,3],sfsFact:[3,2,2],council:"الرقمي",infra:"ورشة متخصصة",trainers:5,maxQual:"بكالوريوس",labs:8,equip:67,equipPend:false},{id:15,name:"تصميم الرسوم المتحركة",dept:"تقنية الإنتاج الإعلامي",gateV:true,gateS:false,mdi:70,sfs:90,quad:"T2",mdiFact:[2,5,4,3,3,3],sfsFact:[4,5,5],council:"الثقافة والترفيه",infra:"معمل حاسب",trainers:4,maxQual:"بكالوريوس",labs:6,equip:54,equipPend:false},{id:16,name:"التبريد الصناعي والتجاري",dept:"التقنية الميكانيكية",gateV:false,gateS:true,mdi:61,sfs:36,quad:"T3",mdiFact:[4,3,3,3,5,1],sfsFact:[4,1,2],council:"الصناعة التحويلية",infra:"ورشة صناعية ثقيلة",trainers:4,maxQual:"بكالوريوس",labs:4,equip:41,equipPend:false},{id:17,name:"أنظمة الأجهزة الذكية",dept:"التقنية الإلكترونية",gateV:true,gateS:false,mdi:68,sfs:60,quad:"T2",mdiFact:[3,4,4,3,3,2],sfsFact:[4,3,3],council:"الرقمي",infra:"ورشة متخصصة",trainers:4,maxQual:"—",labs:13,equip:274,equipPend:false},{id:18,name:"التحليل الائتماني",dept:"التقنية المالية",gateV:false,gateS:false,mdi:52,sfs:74,quad:"T3",mdiFact:[3,3,3,4,3,2],sfsFact:[3,5,4],council:"الخدمات المالية",infra:"معمل حاسب",trainers:5,maxQual:"ماجستير",labs:0,equip:0,equipPend:false},{id:19,name:"الإعلام الرقمي",dept:"تقنية الإنتاج الإعلامي",gateV:true,gateS:false,mdi:54,sfs:74,quad:"T3",mdiFact:[2,4,4,3,3,3],sfsFact:[3,5,4],council:"الثقافة والترفيه",infra:"معمل حاسب",trainers:5,maxQual:"بكالوريوس",labs:7,equip:107,equipPend:false},{id:20,name:"نظم المعلومات الإدارية",dept:"تقنية الأعمال",gateV:false,gateS:false,mdi:48,sfs:100,quad:"T4",mdiFact:[2,3,4,3,3,3],sfsFact:[5,5,5],council:"الخدمات المهنية",infra:"معمل حاسب",trainers:1,maxQual:"بكالوريوس",labs:2,equip:22,equipPend:false},{id:21,name:"إدارة النفايات",dept:"تقنية البيئة",gateV:true,gateS:false,mdi:65,sfs:35,quad:"T2",mdiFact:[3,4,3,3,3,1],sfsFact:[3,2,2],council:"الطاقة والمرافق",infra:"ورشة متخصصة",trainers:1,maxQual:"بكالوريوس",labs:4,equip:77,equipPend:false},{id:22,name:"صناعة الأفلام",dept:"تقنية الإنتاج الإعلامي",gateV:true,gateS:false,mdi:65,sfs:24,quad:"T2",mdiFact:[2,5,3,3,3,2],sfsFact:[1,3,2],council:"الثقافة والترفيه",infra:"ورشة متخصصة",trainers:4,maxQual:"بكالوريوس",labs:7,equip:79,equipPend:false},{id:23,name:"الألعاب الرقمية",dept:"الحاسب وتقنية المعلومات",gateV:true,gateS:false,mdi:65,sfs:35,quad:"T2",mdiFact:[2,4,4,3,3,3],sfsFact:[3,2,2],council:"الرقمي",infra:"ورشة متخصصة",trainers:7,maxQual:"بكالوريوس",labs:6,equip:58,equipPend:false},{id:24,name:"التصميم الحضري",dept:"تقنية التشييد والبناء",gateV:true,gateS:false,mdi:56,sfs:48,quad:"T3",mdiFact:[2,4,3,3,5,2],sfsFact:[1,5,3],council:"التشييد والعقارات",infra:"معمل حاسب",trainers:4,maxQual:"دكتوراه",labs:0,equip:0,equipPend:false},{id:25,name:"تصميم الواقع الافتراضي",dept:"الابتكار الرقمي",gateV:true,gateS:false,mdi:62,sfs:60,quad:"T3",mdiFact:[2,4,4,3,3,2],sfsFact:[4,3,3],council:"الرقمي",infra:"ورشة متخصصة",trainers:3,maxQual:"بكالوريوس",labs:3,equip:16,equipPend:false},{id:26,name:"إدارة الكوارث والحرائق",dept:"تقنية البيئة",gateV:false,gateS:false,mdi:62,sfs:35,quad:"T3",mdiFact:[3,3,3,3,4,1],sfsFact:[3,2,2],council:"الخدمات الأمنية",infra:"ورشة متخصصة",trainers:6,maxQual:"بكالوريوس",labs:5,equip:70,equipPend:false},{id:27,name:"إدارة المحميات",dept:"تقنية البيئة",gateV:true,gateS:false,mdi:60,sfs:40,quad:"T3",mdiFact:[2,4,3,3,3,1],sfsFact:[2,3,3],council:"الطاقة والمرافق",infra:"ورشة متخصصة",trainers:3,maxQual:"بكالوريوس",labs:10,equip:79,equipPend:false},{id:28,name:"السلامة العامة للسفن",dept:"التقنية البحرية",gateV:false,gateS:true,mdi:51,sfs:40,quad:"T3",mdiFact:[4,2,3,3,4,1],sfsFact:[2,3,3],council:"الخدمات اللوجستية",infra:"ورشة متخصصة",trainers:4,maxQual:"بكالوريوس",labs:4,equip:36,equipPend:false},{id:29,name:"ترميم الوثائق والمخطوطات",dept:"تقنية العمارة والتصميم",gateV:true,gateS:false,mdi:58,sfs:24,quad:"T3",mdiFact:[2,4,2,2,3,1],sfsFact:[1,3,2],council:"الثقافة والترفيه",infra:"ورشة متخصصة",trainers:5,maxQual:"—",labs:7,equip:64,equipPend:false},{id:30,name:"الرصد والتنبؤ البيئي",dept:"التقنية الزراعية والبيئية",gateV:true,gateS:false,mdi:58,sfs:60,quad:"T3",mdiFact:[2,4,3,3,3,1],sfsFact:[4,3,3],council:"الطاقة والمرافق",infra:"ورشة متخصصة",trainers:2,maxQual:"بكالوريوس",labs:4,equip:28,equipPend:false},{id:31,name:"التصوير الضوئي",dept:"تقنية الإنتاج الإعلامي",gateV:true,gateS:false,mdi:58,sfs:60,quad:"T3",mdiFact:[2,4,3,3,3,2],sfsFact:[4,3,3],council:"الثقافة والترفيه",infra:"ورشة متخصصة",trainers:4,maxQual:"بكالوريوس",labs:6,equip:88,equipPend:false},{id:32,name:"سلسلة كتل البيانات",dept:"الحاسب وتقنية المعلومات",gateV:false,gateS:false,mdi:58,sfs:40,quad:"T3",mdiFact:[2,3,4,3,3,2],sfsFact:[2,3,3],council:"الرقمي",infra:"ورشة متخصصة",trainers:3,maxQual:"بكالوريوس",labs:3,equip:27,equipPend:false},{id:33,name:"صيانة الأجهزة الإلكترونية الذكية",dept:"التقنية الإلكترونية",gateV:false,gateS:false,mdi:55,sfs:10,quad:"T3",mdiFact:[2,3,3,3,3,2],sfsFact:[1,1,1],council:"الرقمي",infra:"—",trainers:0,maxQual:"—",labs:0,equip:0,equipPend:false},{id:34,name:"الأطراف الاصطناعية",dept:"التقنيات الصحية",gateV:false,gateS:false,mdi:50,sfs:25,quad:"T3",mdiFact:[2,3,3,3,5,2],sfsFact:[2,2,2],council:"الصحة",infra:"ورشة متخصصة",trainers:2,maxQual:"بكالوريوس",labs:9,equip:51,equipPend:false},{id:35,name:"الإنتاج الصوتي",dept:"تقنية الإنتاج الإعلامي",gateV:false,gateS:false,mdi:55,sfs:50,quad:"T3",mdiFact:[2,3,3,3,3,2],sfsFact:[3,3,3],council:"الثقافة والترفيه",infra:"ورشة متخصصة",trainers:4,maxQual:"بكالوريوس",labs:5,equip:59,equipPend:false},{id:36,name:"الجيولوجيا التطبيقية",dept:"تقنية البيئة",gateV:false,gateS:false,mdi:55,sfs:50,quad:"T3",mdiFact:[2,3,3,3,3,1],sfsFact:[3,3,3],council:"الطاقة والمرافق",infra:"ورشة متخصصة",trainers:5,maxQual:"بكالوريوس",labs:8,equip:40,equipPend:false},{id:37,name:"الاستزراع السمكي",dept:"تقنية الغذاء",gateV:false,gateS:false,mdi:52,sfs:24,quad:"T3",mdiFact:[2,3,3,2,3,1],sfsFact:[1,3,2],council:"—",infra:"ورشة متخصصة",trainers:3,maxQual:"ماجستير",labs:0,equip:0,equipPend:false},{id:38,name:"صيانة القوارب والسفن",dept:"التقنية البحرية",gateV:false,gateS:false,mdi:38,sfs:10,quad:"T4",mdiFact:[2,3,2,2,4,1],sfsFact:[2,1,1],council:"الخدمات اللوجستية",infra:"ورشة صناعية ثقيلة",trainers:5,maxQual:"بكالوريوس",labs:6,equip:43,equipPend:false},{id:39,name:"التصميم والطباعة الرقمية",dept:"تقنية الإنتاج الإعلامي",gateV:false,gateS:false,mdi:50,sfs:10,quad:"T3",mdiFact:[2,3,3,2,3,2],sfsFact:[1,1,1],council:"الثقافة والترفيه",infra:"—",trainers:0,maxQual:"—",labs:0,equip:0,equipPend:false},{id:40,name:"تقنيات زراعية",dept:"التقنية الزراعية والبيئية",gateV:false,gateS:false,mdi:48,sfs:10,quad:"T4",mdiFact:[2,3,2,2,3,1],sfsFact:[1,1,1],council:"—",infra:"—",trainers:0,maxQual:"—",labs:0,equip:0,equipPend:false},{id:41,name:"كهرباء السفن",dept:"التقنية البحرية",gateV:false,gateS:false,mdi:35,sfs:10,quad:"T4",mdiFact:[2,2,3,2,4,1],sfsFact:[1,1,1],council:"الخدمات اللوجستية",infra:"—",trainers:0,maxQual:"—",labs:0,equip:0,equipPend:false},{id:42,name:"الفن التشكيلي والحرفي",dept:"تقنية العمارة والتصميم",gateV:true,gateS:false,mdi:45,sfs:50,quad:"T4",mdiFact:[1,3,2,2,3,2],sfsFact:[3,3,3],council:"الثقافة والترفيه",infra:"ورشة متخصصة",trainers:3,maxQual:"بكالوريوس",labs:4,equip:36,equipPend:false},{id:43,name:"مكافحة التصحر",dept:"التقنية الزراعية والبيئية",gateV:false,gateS:false,mdi:42,sfs:10,quad:"T4",mdiFact:[1,2,2,2,3,1],sfsFact:[1,1,1],council:"—",infra:"—",trainers:0,maxQual:"—",labs:0,equip:0,equipPend:false}];
 
 const SSOC_CODES={"تقنية الذكاء الاصطناعي وتعلم الآلة":"252902","التكنولوجيا المالية":"—","تقنية اللحام":"721201","تقنية الصيانة الكهربائية":"311301","تقنية المعلومات الصحية":"325201","أنظمة الطاقة والشبكات الكهربائية الذكية":"—","تقنية الإدارة الصحية":"325203","تقنية المركبات الكهربائية والهجينة":"—","تقنية معالجة المياه":"313201","تقنية التحول الرقمي":"252911","صيانة الطائرات بدون طيار":"—","تقنية التحليل المالي":"241303","عمليات الشحن والنقل":"332403","تصميم وإدارة قواعد البيانات":"252102","تصميم الرسوم المتحركة":"216602","التبريد الصناعي والتجاري":"712702","أنظمة الأجهزة الذكية":"—","التحليل الائتماني":"241302","الإعلام الرقمي":"—","نظم المعلومات الإدارية":"—","إدارة النفايات":"—","صناعة الأفلام":"265402","الألعاب الرقمية":"251302","التصميم الحضري":"—","تقنية تصميم الواقع الافتراضي":"—","إدارة الكوارث والحرائق":"311202","إدارة المحميات":"213305","السلامة العامة للسفن":"315102","ترميم الوثائق والمخطوطات":"265105","الرصد والتنبؤ البيئي":"325702","سلسلة كتل البيانات":"—","التصوير الضوئي":"343101","الإنتاج الصوتي":"352101","الجيولوجيا التطبيقية":"311105","الاستزراع السمكي":"213206","صيانة القوارب والسفن":"723307","الفن التشكيلي والحرفي":"265103","الأطراف الاصطناعية":"321403","صيانة الأجهزة الإلكترونية الذكية":"—","التصميم والطباعة الرقمية":"351103","تقنيات زراعية":"314201","كهرباء السفن":"315101","مكافحة التصحر":"—",};
-const QUAD={Q1:{ar:"إطلاق فوري",color:"#0d7377",bg:"#e0f5f5",cls:"pill-q1"},Q2:{ar:"استثمار وتخطيط",color:"#4e7d96",bg:"#e4eff6",cls:"pill-q2"},Q3:{ar:"اختياري",color:"#1bc5c5",bg:"#e0fafa",cls:"pill-q3"},Q4:{ar:"أولوية منخفضة",color:"#3a3a3c",bg:"#ededee",cls:"pill-q4"},NO:{ar:"أولوية منخفضة",color:"#3a3a3c",bg:"#ededee",cls:"pill-q4"}};
 
-function pillHTML(q){let d=QUAD[q]||QUAD.NO;return `<span class="pill ${d.cls}">${d.ar}</span>`}
-function scoreColor(v){return v>=4?"#0c2524":v>=3?"#4e7d96":"#8a9e9c"}
-function scoreBg(v){return v>=4?"#d0efef":v>=3?"#e4eff6":"#f0f3f2"}
+// ═══ PRIORITY TIERS — MDI-only scoring ═══
+const TIERS={T1:{ar:"أولوية عليا",desc:"إطلاق فوري",color:"#0ea5e9",bg:"#e0f2fe",cls:"pill-t1",min:80,range:"MDI ≥ 80"},T2:{ar:"أولوية عالية",desc:"توصية بالإطلاق",color:"#3b82f6",bg:"#dbeafe",cls:"pill-t2",min:65,range:"MDI 65–79"},T3:{ar:"أولوية متوسطة",desc:"مراجعة لاحقة",color:"#f59e0b",bg:"#fef3c7",cls:"pill-t3",min:50,range:"MDI 50–64"},T4:{ar:"أولوية منخفضة",desc:"يُعاد التقييم",color:"#ef4444",bg:"#fee2e2",cls:"pill-t4",min:0,range:"MDI < 50"}};
+function getTier(mdi){if(mdi>=80)return'T1';if(mdi>=65)return'T2';if(mdi>=50)return'T3';return'T4'}
+const QUAD=TIERS;
+
+function pillHTML(q){let d=TIERS[q]||TIERS.T4;return `<span class="pill ${d.cls}">${d.ar}</span>`}
+function tierPill(mdi){let t=TIERS[getTier(mdi)];return `<span class="pill ${t.cls}">${t.ar}</span>`}
+function scoreColor(v){return v>=4?"#0f172a":v>=3?"#3b82f6":"#94a3b8"}
+function scoreBg(v){return v>=4?"#e0f2fe":v>=3?"#dbeafe":"#f1f5f9"}
 function factorCell(v){return `<td style="text-align:center"><span style="display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:6px;font-size:12px;font-weight:600;background:${scoreBg(v)};color:${scoreColor(v)}">${v}</span></td>`}
-function mdiBar(v){return `<td><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;height:7px;border-radius:4px;background:#e5e7eb;overflow:hidden"><div style="height:100%;width:${v}%;border-radius:4px;background:#0d7377"></div></div><span style="font-size:12px;font-weight:700;color:#0d7377;min-width:24px">${v}</span></div></td>`}
-function sfsBar(v){return `<td><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;height:7px;border-radius:4px;background:#e5e7eb;overflow:hidden"><div style="height:100%;width:${v}%;border-radius:4px;background:#4e7d96"></div></div><span style="font-size:12px;font-weight:700;color:#4e7d96;min-width:24px">${v}</span></div></td>`}
-function gateCell(v){return `<td style="text-align:center;background:#0d737708"><span style="color:${v?'#0d7377':'#9b4d5a'};font-size:16px;font-weight:700">${v?'✓':'✗'}</span></td>`}
+function mdiBar(v){return `<td><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;height:7px;border-radius:4px;background:#e5e7eb;overflow:hidden"><div style="height:100%;width:${v}%;border-radius:4px;background:#0ea5e9"></div></div><span style="font-size:12px;font-weight:700;color:#0ea5e9;min-width:24px">${v}</span></div></td>`}
+function sfsBar(v){return `<td><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;height:7px;border-radius:4px;background:#e5e7eb;overflow:hidden"><div style="height:100%;width:${v}%;border-radius:4px;background:#3b82f6"></div></div><span style="font-size:12px;font-weight:700;color:#3b82f6;min-width:24px">${v}</span></div></td>`}
+function gateCell(v){return `<td style="text-align:center;background:#0ea5e908"><span style="color:${v?'#0ea5e9':'#ef4444'};font-size:16px;font-weight:700">${v?'✓':'✗'}</span></td>`}
 
 // Overview table — top 15 by MDI
 let sorted=[...PROGRAMS].sort((a,b)=>b.mdi-a.mdi);
-document.getElementById('main-table-body').innerHTML=sorted.slice(0,15).map((p,i)=>`<tr>
+// Overview table removed — data available in ترتيب الأولويات tab
+let mtb=document.getElementById('main-table-body');if(mtb)mtb.innerHTML=sorted.slice(0,15).map((p,i)=>`<tr>
 <td style="text-align:center;color:var(--text3)">${i+1}</td>
 <td style="font-weight:600">${p.name}</td>
 <td style="font-size:11px;color:var(--text2)">${p.dept}</td>
@@ -783,164 +946,137 @@ document.getElementById('supply-table-body').innerHTML=supplyData.map((p,i)=>`<t
 <td style="text-align:center;color:var(--text3)">${i+1}</td>
 <td style="font-weight:600">${p.name}</td>
 <td style="font-size:11px;color:var(--text2)">${p.dept}</td>
-<td style="text-align:center;background:#3a3a3c06">${p.trainers}</td>
-<td style="text-align:center;font-size:11px;background:#3a3a3c06">${p.maxQual}</td>
-<td style="text-align:center;background:#3a3a3c06">${p.labs||'—'}</td>
-<td style="text-align:center;background:#4e7d9606">${p.equip||'—'}</td>
-<td style="text-align:center;background:#4e7d9606">${p.equipPend?'<span style="background:#e4eff6;color:#4e7d96;padding:2px 8px;border-radius:4px;font-size:10px">معلّق</span>':'<span style="background:#d0efef;color:#0d7377;padding:2px 8px;border-radius:4px;font-size:10px">مكتمل</span>'}</td>
+<td style="text-align:center;background:#33415506">${p.trainers}</td>
+<td style="text-align:center;font-size:11px;background:#33415506">${p.maxQual}</td>
+<td style="text-align:center;background:#33415506">${p.labs||'—'}</td>
+<td style="text-align:center;background:#3b82f606">${p.equip||'—'}</td>
+<td style="text-align:center;background:#3b82f606">${p.equipPend?'<span style="background:#e4eff6;color:#3b82f6;padding:2px 8px;border-radius:4px;font-size:10px">معلّق</span>':'<span style="background:#e0f2fe;color:#0ea5e9;padding:2px 8px;border-radius:4px;font-size:10px">مكتمل</span>'}</td>
 <td style="font-size:11px">${p.infra}</td>
 ${p.sfsFact.map(v=>v>0?factorCell(v):'<td style="text-align:center;color:var(--text3)">—</td>').join('')}
 ${sfsBar(p.sfs)}
 </tr>`).join('');
 
-// Quadrant distribution bar
-let qCounts={};['Q1','Q2','Q3','Q4'].forEach(q=>qCounts[q]=PROGRAMS.filter(p=>p.quad===q).length);
-document.getElementById('quad-bar').innerHTML=['Q1','Q2','Q3','Q4','NO'].map(q=>{
-let pct=Math.round(qCounts[q]/PROGRAMS.length*100);
-return qCounts[q]?`<div style="width:${pct}%;background:${QUAD[q].color};display:flex;align-items:center;justify-content:center;color:white;font-size:12px;font-weight:600;min-width:40px">${qCounts[q]}</div>`:''
-}).join('');
-document.getElementById('quad-legend').innerHTML=['Q1','Q2','Q3','Q4'].map(q=>`<span style="display:flex;align-items:center;gap:4px"><span class="dot" style="background:${QUAD[q].color}"></span>${QUAD[q].ar} (${qCounts[q]})</span>`).join('');
-
-// Matrix scatter
-let mc=document.getElementById('matrix-container');
-// Corner labels — fixed positioning
-[
-{name:'إطلاق فوري',hint:'طلب ↑ عرض ↑',css:'top:8px;right:10px',c:'#0d7377',bg:'#e0f5f5'},
-{name:'استثمار وتخطيط',hint:'طلب ↑ عرض ↓',css:'bottom:8px;right:10px',c:'#4e7d96',bg:'#e4eff6'},
-{name:'اختياري',hint:'طلب ↓ عرض ↑',css:'top:8px;left:10px',c:'#1bc5c5',bg:'#e0fafa'},
-{name:'أولوية منخفضة',hint:'طلب ↓ عرض ↓',css:'bottom:8px;left:10px',c:'#3a3a3c',bg:'#ededee'}
-].forEach(q=>{
-let el=document.createElement('div');
-el.style.cssText='position:absolute;font-size:10px;font-weight:700;padding:4px 8px;border-radius:6px;z-index:5;direction:rtl;'+q.css+';color:'+q.c+';background:'+q.bg;
-el.textContent=q.name;
-mc.appendChild(el);
-});
-// bg quadrants
-[{t:0,r:0,w:'50%',h:'50%',bg:'#0d73770A'},{b:0,r:0,w:'50%',h:'50%',bg:'#4e7d960A'},{t:0,l:0,w:'50%',h:'50%',bg:'#1bc5c50A'},{b:0,l:0,w:'50%',h:'50%',bg:'#3a3a3c0A'}].forEach(s=>{
-let d=document.createElement('div');d.style.cssText=`position:absolute;${Object.entries(s).map(([k,v])=>k+':'+v).join(';')}`;mc.appendChild(d);
-});
-// axes at thresholds: MDI=65 → x=50%, SFS=50 → y=52.4%
-let ax1=document.createElement('div');ax1.style.cssText='position:absolute;top:0;bottom:0;left:50%;width:1px;border-left:1.5px dashed #c8d5d0';mc.appendChild(ax1);
-let ax2=document.createElement('div');ax2.style.cssText='position:absolute;left:0;right:0;top:52.4%;height:1px;border-top:1.5px dashed #c8d5d0';mc.appendChild(ax2);
-// Axis labels in HTML grid
-// X-axis scale ticks
-[{v:40,x:((40-35)/60)*100},{v:50,x:((50-35)/60)*100},{v:65,x:50},{v:75,x:((75-35)/60)*100},{v:85,x:((85-35)/60)*100}].forEach(t=>{
-let tk=document.createElement('div');tk.style.cssText='position:absolute;bottom:-14px;left:'+t.x+'%;transform:translateX(-50%);font-size:9px;color:#8a9e9c';tk.textContent=t.v;mc.appendChild(tk);
-});
-// Y-axis scale ticks
-[{v:0,y:(1-0/105)*100},{v:25,y:(1-25/105)*100},{v:50,y:(1-50/105)*100},{v:75,y:(1-75/105)*100},{v:100,y:(1-100/105)*100}].forEach(t=>{
-let tk=document.createElement('div');tk.style.cssText='position:absolute;left:-18px;top:'+t.y+'%;transform:translateY(-50%);font-size:9px;color:#8a9e9c';tk.textContent=t.v;mc.appendChild(tk);
-});
-// Threshold labels
-let t65=document.createElement('div');t65.style.cssText='position:absolute;bottom:-14px;left:50%;transform:translateX(-50%);font-size:9px;font-weight:700;color:#0d7377';t65.textContent='65';mc.appendChild(t65);
-let t50=document.createElement('div');t50.style.cssText='position:absolute;left:-18px;top:52.4%;transform:translateY(-50%);font-size:9px;font-weight:700;color:#4e7d96';t50.textContent='50';mc.appendChild(t50);
-
-// dots + rich tooltip
-let mtt=document.createElement('div');mtt.className='matrix-tooltip';mc.appendChild(mtt);
-let fLabels=['التوطين','رؤية 2030','O*NET','المجالس','السوق','العمل الحر'];
-let sLabels=['هيئة التدريب','المعامل والتجهيزات','سرعة التنفيذ'];
-let lblIdx=0;
-PROGRAMS.forEach(p=>{
-let x=((p.mdi-35)/60)*100;
-let y=(1-(p.sfs/105))*100;
-let qd=QUAD[p.quad];
-let d=document.createElement('div');
-d.style.cssText=`position:absolute;left:${x}%;top:${y}%;transform:translate(-50%,-50%);width:14px;height:14px;border-radius:50%;background:${qd.color};opacity:.8;cursor:pointer;z-index:10;transition:all .15s;border:2px solid transparent`;
-d.onmouseenter=(ev)=>{
-d.style.width='20px';d.style.height='20px';d.style.opacity='1';d.style.border='2px solid white';d.style.boxShadow='0 2px 12px rgba(0,0,0,.3)';d.style.zIndex='20';
-let topFactors=p.mdiFact.map((v,i)=>({n:fLabels[i],v})).sort((a,b)=>b.v-a.v).slice(0,3);
-mtt.innerHTML=`<div class="tt-name" style="color:${qd.color}">${p.name}</div><div class="tt-dept">${p.dept} · ${p.council}</div><div class="tt-row"><span>MDI — مؤشر الطلب</span><span class="tt-val" style="color:#0d7377">${p.mdi}</span></div><div class="tt-row"><span>SFS — جاهزية العرض</span><span class="tt-val" style="color:#4e7d96">${p.sfs||'—'}</span></div><div class="tt-row"><span>التصنيف</span><span class="tt-val" style="color:${qd.color}">${qd.ar}</span></div><div style="border-top:1px solid var(--border);margin:6px 0 4px;padding-top:6px;font-size:10.5px;color:var(--text3);font-weight:600">أقوى 3 عوامل طلب</div>${topFactors.map(f=>`<div class="tt-row"><span>${f.n}</span><span class="tt-val">${f.v}/5</span></div>`).join('')}<div style="margin-top:6px;font-size:10.5px;color:var(--text3)">${p.infra||'—'} · ${p.trainers} مدرب · ${p.gateV?'رؤية 2030 ✓':'—'} · ${p.gateS?'توطين ✓':'—'}</div>`;
-mtt.classList.add('show');
-let rect=mc.getBoundingClientRect();let dx=ev.clientX-rect.left;let dy=ev.clientY-rect.top;
-let ttW=mtt.offsetWidth||240;let ttH=mtt.offsetHeight||200;
-let posL=dx+20;let posT=dy-ttH/2;
-if(posL+ttW>rect.width)posL=dx-ttW-20;
-if(posT<0)posT=4;if(posT+ttH>rect.height)posT=rect.height-ttH-4;
-mtt.style.left=posL+'px';mtt.style.top=posT+'px';
-};
-d.onmouseleave=()=>{d.style.width='14px';d.style.height='14px';d.style.opacity='.8';d.style.border='2px solid transparent';d.style.boxShadow='none';d.style.zIndex='10';mtt.classList.remove('show')};
-// Smart label — alternate position based on index
-let lbl=document.createElement('div');
-let offsets=[10,-16,10,-16,12,-18];
-let lblY=offsets[lblIdx%6]+'px';
-lbl.style.cssText=`position:absolute;left:${x}%;top:${y}%;font-size:8px;color:${qd.color};font-weight:600;white-space:nowrap;transform:translate(-50%,${lblY});pointer-events:none;z-index:4;text-shadow:0 0 4px #fff,0 0 4px #fff,0 0 4px #fff,0 0 4px #fff,0 0 4px #fff`;
-lbl.textContent=p.name;
-mc.appendChild(lbl);
-lblIdx++;
-mc.appendChild(d);
-});
-document.getElementById('matrix-legend').innerHTML=['Q1','Q2','Q3','Q4'].map(q=>`<span style="display:flex;align-items:center;gap:4px"><span class="dot" style="background:${QUAD[q].color}"></span>${QUAD[q].ar} (${qCounts[q]})</span>`).join('');
-
-
-
-// Alerts
-let alerts=[
-{type:'danger',title:'5 برامج قيد استكمال البيانات',desc:'برامج قيد الاستكمال: صيانة الأجهزة الذكية، التصميم والطباعة، تقنيات زراعية، كهرباء السفن، مكافحة التصحر — بحاجة لاستكمال ملف التجهيزات والموارد البشرية.',action:'استكمال ملف التجهيزات'},
-{type:'warning',title:'24 برنامج بتجهيزات معلّقة',desc:'بيانات التجهيزات والمعامل غير مكتملة. يؤثر على دقة تقييم SFS ويمنع التصنيف النهائي في المصفوفة.',action:'تحديث بيانات التجهيزات'},
-{type:'info',title:'نمو القطاع — تقدير استشاري',desc:'عامل "مستوى نمو القطاع" يعتمد حالياً على تقدير الفريق الاستشاري. بحاجة لمصادقة العميل قبل الاعتماد النهائي.',action:'مصادقة العميل'},
-{type:'warning',title:'بُعد التكلفة غير مُدرج',desc:'المنهجية الحالية لا تتضمن تقدير تكلفة التنفيذ لكل برنامج. يُوصى بإضافته كبُعد تكميلي في المرحلة الثانية.',action:'إضافة في المرحلة 2'},
-{type:'info',title:'مصادر البيانات القطاعية',desc:'13 قاعدة بيانات قطاعية متوفرة ومكتملة. الأمن السيبراني مغطى عبر إطار سيوف.',action:'مراجعة المصادر'}
-];
-let alertColors={danger:{bg:'#fce8ec',border:'#9b4d5a',icon:'⚠'},warning:{bg:'#e4eff6',border:'#4e7d96',icon:'⚡'},info:{bg:'#e0fafa',border:'#1bc5c5',icon:'ℹ'}};
-document.getElementById('alerts-container').innerHTML=alerts.map(a=>{
-let c=alertColors[a.type];
-return `<div style="background:${c.bg};border-right:4px solid ${c.border};border-radius:12px;padding:1rem 1.25rem;margin-bottom:10px;display:flex;align-items:flex-start;gap:12px">
-<span style="font-size:18px;margin-top:2px">${c.icon}</span>
-<div style="flex:1">
-<div style="font-size:13px;font-weight:700;color:${c.border}">${a.title}</div>
-<div style="font-size:12px;color:var(--text2);margin-top:4px;line-height:1.6">${a.desc}</div>
+// Priority Ranking
+function renderRanking(){
+const tFilter=document.getElementById('rank-tier-filter');
+const dFilter=document.getElementById('rank-dept-filter');
+if(!tFilter||!dFilter)return;
+const tv=tFilter.value,dv=dFilter.value;
+let filtered=PROGRAMS.filter(p=>{
+const tOk=tv==='all'||p.quad===tv;
+const dOk=dv==='all'||p.dept===dv;
+return tOk&&dOk;
+}).sort((a,b)=>b.mdi-a.mdi);
+document.getElementById('rank-count').textContent=`${filtered.length} من ${PROGRAMS.length} برنامج`;
+const maxMdi=100;
+document.getElementById('priority-ranking-chart').innerHTML=filtered.map((p,i)=>{
+const t=TIERS[p.quad];
+const pct=(p.mdi/maxMdi)*100;
+return `<div style="display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:8px;background:${t.bg}40;border:1px solid ${t.color}15;transition:all .2s;cursor:default" onmouseenter="this.style.background='${t.bg}';this.style.transform='translateX(2px)'" onmouseleave="this.style.background='${t.bg}40';this.style.transform=''">
+<div style="min-width:28px;font-size:11px;font-weight:700;color:${t.color};text-align:center">${i+1}</div>
+<div style="flex:1;min-width:0">
+<div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:3px">
+<div style="font-size:12px;font-weight:600;color:var(--text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${p.name}</div>
+<div style="display:flex;gap:8px;align-items:baseline;flex-shrink:0">
+<span style="font-size:9px;color:var(--text3)">${p.dept}</span>
+<span style="font-size:15px;font-weight:800;color:${t.color};font-variant-numeric:tabular-nums">${p.mdi}</span>
 </div>
-<span style="background:white;color:${c.border};font-size:11px;font-weight:600;padding:4px 12px;border-radius:6px;white-space:nowrap;border:1px solid ${c.border}30;cursor:pointer">${a.action}</span>
-</div>`}).join('');
+</div>
+<div style="position:relative;height:6px;background:rgba(0,0,0,.04);border-radius:3px;overflow:hidden">
+<div style="position:absolute;top:0;right:0;bottom:0;width:${pct}%;background:linear-gradient(90deg,${t.color}80,${t.color});border-radius:3px"></div>
+</div>
+</div>
+<div style="min-width:90px;text-align:center">
+<span class="pill ${t.cls}" style="font-size:9px;padding:2px 8px">${t.ar}</span>
+</div>
+<div style="min-width:50px;text-align:center;font-size:10px;color:var(--text3)" title="مؤشر العرض (للمعلومية فقط)">SFS: ${p.sfs||'—'}</div>
+</div>`;
+}).join('');
+// Update tier counts
+const tc={T1:0,T2:0,T3:0,T4:0};
+PROGRAMS.forEach(p=>{if(tc[p.quad]!==undefined)tc[p.quad]++});
+['T1','T2','T3','T4'].forEach(t=>{const el=document.getElementById(t.toLowerCase()+'-count');if(el)el.textContent=tc[t]});
+}
 
-// ═══ OVERVIEW: Dynamic KPIs ═══
-let q1=PROGRAMS.filter(p=>p.quad==='Q1');
-let q2=PROGRAMS.filter(p=>p.quad==='Q2');
-let noSpec=PROGRAMS.filter(p=>p.quad==='NO');
+// Populate department filter
+(function(){
+const dSel=document.getElementById('rank-dept-filter');
+if(!dSel)return;
+const depts=[...new Set(PROGRAMS.map(p=>p.dept))].sort();
+depts.forEach(d=>{const o=document.createElement('option');o.value=d;o.textContent=d;dSel.appendChild(o)});
+renderRanking();
+})();
+
+
+// ═══ OVERVIEW: Dynamic KPIs (MDI-only scoring) ═══
+let t1=PROGRAMS.filter(p=>p.quad==='T1');
+let t2=PROGRAMS.filter(p=>p.quad==='T2');
+let t3=PROGRAMS.filter(p=>p.quad==='T3');
+let t4=PROGRAMS.filter(p=>p.quad==='T4');
 let withSFS=PROGRAMS.filter(p=>p.sfs>0);
 let avgMDI=Math.round(PROGRAMS.reduce((s,p)=>s+p.mdi,0)/PROGRAMS.length);
 let avgSFS=Math.round(withSFS.reduce((s,p)=>s+p.sfs,0)/withSFS.length);
-let pendEquip=PROGRAMS.filter(p=>p.equipPend&&p.quad!=='NO').length;
-let totalTrainers=PROGRAMS.reduce((s,p)=>s+p.trainers,0);
+
+// Executive tier cards
+['T1','T2','T3','T4'].forEach(k=>{let el=document.getElementById('ov-'+k.toLowerCase());if(el)el.textContent={T1:t1,T2:t2,T3:t3,T4:t4}[k].length});
 
 document.getElementById('kpi-row-dynamic').innerHTML=[
-{l:'جاهز للإطلاق',v:q1.length,n:'طلب قوي + عرض جاهز',c:'#0d7377',tab:'matrix'},
-{l:'يحتاج استثمار',v:q2.length,n:'طلب قوي + عرض ضعيف',c:'#4e7d96',tab:'matrix'},
-{l:'متوسط الطلب MDI',v:avgMDI,n:'من 100 · عبر 43 برنامج',c:'#0d7377',tab:'demand'},
-{l:'متوسط العرض SFS',v:avgSFS,n:'من 100 · '+withSFS.length+' برنامج',c:'#4e7d96',tab:'supply'},
-
+{l:'أولوية عليا + عالية',v:t1.length+t2.length,n:'برامج موصى بإطلاقها — MDI ≥ 65',c:'#0ea5e9',tab:'matrix'},
+{l:'متوسط الطلب MDI',v:avgMDI,n:'من 100 · عبر 43 برنامج',c:'#3b82f6',tab:'demand'},
+{l:'متوسط العرض SFS',v:avgSFS,n:'للمعلومية فقط · لا يؤثر على الترتيب',c:'#f59e0b',tab:'supply'},
+{l:'أعلى MDI',v:Math.max(...PROGRAMS.map(p=>p.mdi)),n:'أفضل برنامج مرشح',c:'#10b981',tab:'matrix'}
 ].map((k,i)=>{
-let borders=['#0d7377','#4e7d96','#0d7377','#4e7d96','#9b4d5a'];
-return `<div class="kpi" style="border-top-color:${borders[i]};cursor:pointer" onclick="switchTabDirect('${k.tab}')"><div class="kpi-label">${k.l}</div><div class="kpi-val" style="color:${k.c}">${k.v}</div><div class="kpi-note" style="color:#0ea5e9;font-weight:500">← اضغط للتفاصيل</div></div>`
+let borders=['#0ea5e9','#3b82f6','#f59e0b','#10b981'];
+return `<div class="kpi" style="border-top-color:${borders[i]};cursor:pointer" onclick="switchTabDirect('${k.tab}')"><div class="kpi-label">${k.l}</div><div class="kpi-val" style="color:${k.c}">${k.v}</div><div class="kpi-note" style="font-size:10px;color:var(--text3);margin-top:4px">${k.n}</div></div>`
 }).join('');
 
-// ═══ OVERVIEW: Demand-Supply Gap ═══
-let gapHTML='<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">';
-// RIGHT COLUMN: Q1 — ready to launch (high MDI + high SFS)
-gapHTML+='<div><div style="font-size:13px;font-weight:700;color:#0d7377;margin-bottom:10px">جاهز للإطلاق — '+q1.length+' برنامج</div>';
-q1.sort((a,b)=>(b.mdi+b.sfs)-(a.mdi+a.sfs)).slice(0,8).forEach(p=>{
-gapHTML+=`<div style="display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:8px;margin-bottom:4px;background:#f0f8f8;border:1px solid #0d737715"><div style="flex:1"><div style="font-size:12px;font-weight:600">${p.name}</div><div style="font-size:10px;color:var(--text3);margin-top:1px">${p.council}</div></div><div style="text-align:center;min-width:34px"><div style="font-size:13px;font-weight:700;color:#0d7377">${p.mdi}</div><div style="font-size:8px;color:var(--text3)">MDI</div></div><div style="text-align:center;min-width:34px"><div style="font-size:13px;font-weight:700;color:#4e7d96">${p.sfs}</div><div style="font-size:8px;color:var(--text3)">SFS</div></div></div>`;
-});
-gapHTML+='</div>';
-// LEFT COLUMN: Q2 — needs investment (high MDI + low SFS)
-gapHTML+='<div><div style="font-size:13px;font-weight:700;color:#4e7d96;margin-bottom:10px">يحتاج استثماراً — '+q2.length+' برنامج</div>';
-q2.sort((a,b)=>b.mdi-a.mdi).forEach(p=>{
-gapHTML+=`<div style="display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:8px;margin-bottom:4px;background:#f3f7fa;border:1px solid #4e7d9615"><div style="flex:1"><div style="font-size:12px;font-weight:600">${p.name}</div><div style="font-size:10px;color:var(--text3);margin-top:1px">${p.infra} · ${p.trainers} مدرب</div></div><div style="text-align:center;min-width:34px"><div style="font-size:13px;font-weight:700;color:#0d7377">${p.mdi}</div><div style="font-size:8px;color:var(--text3)">MDI</div></div><div style="text-align:center;min-width:34px"><div style="font-size:13px;font-weight:700;color:#9b4d5a">${p.sfs}</div><div style="font-size:8px;color:var(--text3)">SFS</div></div></div>`;
-});
-gapHTML+='</div></div>';
-document.getElementById('gap-analysis').innerHTML=gapHTML;
+// ═══ OVERVIEW: Tier Distribution Bar ═══
+let tierCounts={T1:t1.length,T2:t2.length,T3:t3.length,T4:t4.length};
+document.getElementById('tier-bar').innerHTML=['T1','T2','T3','T4'].map(k=>{
+let pct=Math.round(tierCounts[k]/PROGRAMS.length*100);
+let t=TIERS[k];
+return `<div style="width:${pct}%;background:${t.color};color:white;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;transition:all .2s" title="${t.ar}: ${tierCounts[k]} برنامج (${pct}%)">${pct>7?t.ar+' · '+tierCounts[k]:tierCounts[k]}</div>`;
+}).join('');
+document.getElementById('tier-legend').innerHTML=['T1','T2','T3','T4'].map(k=>{
+let t=TIERS[k];
+return `<span style="display:flex;align-items:center;gap:6px"><span style="width:12px;height:12px;border-radius:3px;background:${t.color}"></span><span style="font-weight:600;color:${t.color}">${k}</span><span style="color:var(--text2)">${t.ar}</span><span style="color:var(--text3);font-size:10px">(${t.range})</span><span style="color:var(--text);font-weight:700">${tierCounts[k]}</span></span>`;
+}).join('');
 
-// ═══ OVERVIEW: Sector Concentration ═══
-let councils={};q1.forEach(p=>{if(!councils[p.council])councils[p.council]=0;councils[p.council]++});
-let cArr=Object.entries(councils).sort((a,b)=>b[1]-a[1]);
+// ═══ OVERVIEW: Top 10 Programs ═══
+let top10=[...PROGRAMS].sort((a,b)=>b.mdi-a.mdi).slice(0,10);
+document.getElementById('top-programs').innerHTML=top10.map((p,i)=>{
+let t=TIERS[p.quad];
+return `<div style="display:flex;align-items:center;gap:12px;padding:10px 14px;border-radius:10px;background:${t.bg}55;border:1px solid ${t.color}20">
+<div style="min-width:28px;font-size:12px;font-weight:800;color:${t.color};text-align:center">${i+1}</div>
+<div style="flex:1;min-width:0">
+<div style="font-size:12.5px;font-weight:600;color:var(--text);margin-bottom:2px">${p.name}</div>
+<div style="font-size:10px;color:var(--text3)">${p.dept} · ${p.council}</div>
+</div>
+<div style="text-align:center;min-width:60px">
+<div style="font-size:18px;font-weight:800;color:${t.color};line-height:1">${p.mdi}</div>
+<div style="font-size:9px;color:var(--text3);margin-top:2px">MDI</div>
+</div>
+<div style="text-align:center;min-width:60px;opacity:.6">
+<div style="font-size:14px;font-weight:600;color:var(--text2);line-height:1">${p.sfs||'—'}</div>
+<div style="font-size:9px;color:var(--text3);margin-top:2px">SFS</div>
+</div>
+<span class="pill ${t.cls}" style="font-size:10px">${t.ar}</span>
+</div>`;
+}).join('');
+
+// ═══ OVERVIEW: Sector Concentration (T1+T2 priorities) ═══
+let priorityPrograms=PROGRAMS.filter(p=>p.quad==='T1'||p.quad==='T2');
+let councils={};priorityPrograms.forEach(p=>{if(!councils[p.council])councils[p.council]=0;councils[p.council]++});
+let cArr=Object.entries(councils).filter(([n,c])=>n!=='—').sort((a,b)=>b[1]-a[1]);
 let sectorHTML='<div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px">';
-let sColors=['#0d7377','#4e7d96','#1bc5c5','#3a3a3c','#aed4a0','#537d96','#6b8f8e'];
+let sColors=['#0ea5e9','#3b82f6','#38bdf8','#334155','#10b981','#6366f1','#64748b'];
 cArr.forEach(([name,count],i)=>{
-let pct=Math.round(count/q1.length*100);
-sectorHTML+=`<div style="flex:1;min-width:100px;border-radius:10px;padding:12px;text-align:center;background:${sColors[i%7]}08;border:1px solid ${sColors[i%7]}15"><div style="font-size:22px;font-weight:800;color:${sColors[i%7]}">${count}</div><div style="font-size:11px;font-weight:600;margin-top:2px">${name}</div><div style="font-size:10px;color:var(--text3);margin-top:2px">${pct}% من Q1</div></div>`;
+let pct=Math.round(count/priorityPrograms.length*100);
+sectorHTML+=`<div style="flex:1;min-width:100px;border-radius:10px;padding:12px;text-align:center;background:${sColors[i%7]}08;border:1px solid ${sColors[i%7]}15"><div style="font-size:22px;font-weight:800;color:${sColors[i%7]}">${count}</div><div style="font-size:11px;font-weight:600;margin-top:2px">${name}</div><div style="font-size:10px;color:var(--text3);margin-top:2px">${pct}% من الأولويات</div></div>`;
 });
 sectorHTML+='</div>';
-document.getElementById('sector-insight').innerHTML=sectorHTML;
+let si=document.getElementById('sector-insight');if(si)si.innerHTML=sectorHTML;
+
 
 // ═══ SECTORS TAB ═══
 
@@ -989,8 +1125,8 @@ return `<tr>
 <td style="text-align:center">${sk.priority||'—'}</td>
 <td style="text-align:center">${sk.unique||'—'}</td>
 <td style="text-align:center;font-weight:700">${progs.length||'—'}</td>
-<td style="text-align:center;font-weight:700;color:#0d7377">${avg||'—'}</td>
-<td style="text-align:right;font-size:11px;color:var(--text2);max-width:280px;white-space:normal;line-height:1.7">${progs.length?progs.map(p=>p.name).join(' · '):'—'}</td>
+<td style="text-align:center;font-weight:700;color:#0ea5e9">${avg||'—'}</td>
+<td style="text-align:right;font-size:11px;color:var(--text2);max-width:280px;white-space:normal;line-height:1.7">${progs.length?progs.map(p=>`<a href='#' onclick='event.preventDefault();goToDetail(${p.id})' style='color:#0ea5e9;text-decoration:none;cursor:pointer' onmouseenter='this.style.textDecoration="underline"' onmouseleave='this.style.textDecoration="none"'>${p.name}</a>`).join(' · '):'—'}</td>
 </tr>`}).join('');
 document.getElementById('sector-matrix-body').innerHTML=sectorRows;
 
@@ -998,12 +1134,12 @@ document.getElementById('sector-matrix-body').innerHTML=sectorRows;
 
 // Methodology — MDI factors
 let mdiFactors=[
-{name:'قرارات التوطين',weight:'25%',color:'#0d7377',desc:'مدى الإلزام التنظيمي لتأهيل كوادر سعودية. كلما ارتفعت نسبة التوطين واقترب موعد التنفيذ، زادت الدرجة.',scale:'1 = ذكر عام بدون نسبة · 3 = نسبة محددة والتنفيذ بعد سنتين · 5 = إلزامي ووشيك وعقوبات مفعّلة'},
-{name:'طلب مشاريع رؤية 2030',weight:'25%',color:'#0d7377',desc:'ارتباط المهنة بالمشاريع الكبرى (نيوم، البحر الأحمر، القدية، روشن) وبرامج التحول الوطني.',scale:'1 = ارتباط غير مباشر · 3 = مذكور في خطة مشروع بدون أهداف كمية · 5 = هدف توظيف محدد: أرقام وموقع'},
-{name:'التوقعات العالمية O*NET',weight:'15%',color:'#4e7d96',desc:'مرجع دولي مستقل للتحقق من الاتجاه طويل المدى للمهنة. يعتمد على توقعات BLS الأمريكي وتصنيف Bright Outlook.',scale:'1 = تراجع عالمي · 3 = نمو متوسط يتماشى مع المتوسط · 5 = Bright Outlook: نمو سريع وفرص عالية'},
-{name:'أولوية المجالس القطاعية',weight:'15%',color:'#4e7d96',desc:'التطابق بين مهارات البرنامج وأولويات 13 قاعدة بيانات قطاعية. كلما زاد التطابق عبر قطاعات فرعية متعددة، ارتفعت الدرجة.',scale:'1 = غير موجود في أي قاعدة · 3 = بعض المهارات تتطابق · 5 = أولوية قصوى عبر قطاعات متعددة'},
-{name:'مؤشرات سوق العمل المحلي <span style="background:#e0f5f5;color:#0d7377;padding:1px 6px;border-radius:3px;font-size:8px;font-weight:600">GASTAT Q4-2025</span>',weight:'15%',color:'#4e7d96',desc:'يُحسب من بيانات GASTAT الفعلية (الربع الرابع 2025): نسبة توظيف السعوديين في القطاع المستهدف + متوسط الأجور القطاعية.',scale:'1 = قطاع <0.5% توظيف سعودي · 3 = قطاع 1-3% أو أجور >5,000 ر.س · 5 = قطاع >5% توظيف سعودي + أجور >10,000 ر.س'},
-{name:'ملاءمة العمل الحر',weight:'5%',color:'#3a3a3c',desc:'إمكانية العمل المستقل عبر منصة العمل الحر الوطنية (+140 مهنة) ومنصة بحر. مؤشر تكميلي.',scale:'1 = غير موجود في القائمة المعتمدة · 3 = في فئة الخدمات التخصصية · 5 = تخصصية + شهادات + طلب نشط'}
+{name:'قرارات التوطين',weight:'25%',color:'#0ea5e9',desc:'مدى الإلزام التنظيمي لتأهيل كوادر سعودية. كلما ارتفعت نسبة التوطين واقترب موعد التنفيذ، زادت الدرجة.',scale:'1 = ذكر عام بدون نسبة · 3 = نسبة محددة والتنفيذ بعد سنتين · 5 = إلزامي ووشيك وعقوبات مفعّلة'},
+{name:'طلب مشاريع رؤية 2030',weight:'25%',color:'#0ea5e9',desc:'ارتباط المهنة بالمشاريع الكبرى (نيوم، البحر الأحمر، القدية، روشن) وبرامج التحول الوطني.',scale:'1 = ارتباط غير مباشر · 3 = مذكور في خطة مشروع بدون أهداف كمية · 5 = هدف توظيف محدد: أرقام وموقع'},
+{name:'التوقعات العالمية O*NET',weight:'15%',color:'#3b82f6',desc:'مرجع دولي مستقل للتحقق من الاتجاه طويل المدى للمهنة. يعتمد على توقعات BLS الأمريكي وتصنيف Bright Outlook.',scale:'1 = تراجع عالمي · 3 = نمو متوسط يتماشى مع المتوسط · 5 = Bright Outlook: نمو سريع وفرص عالية'},
+{name:'أولوية المجالس القطاعية',weight:'15%',color:'#3b82f6',desc:'التطابق بين مهارات البرنامج وأولويات 13 قاعدة بيانات قطاعية. كلما زاد التطابق عبر قطاعات فرعية متعددة، ارتفعت الدرجة.',scale:'1 = غير موجود في أي قاعدة · 3 = بعض المهارات تتطابق · 5 = أولوية قصوى عبر قطاعات متعددة'},
+{name:'مؤشرات سوق العمل المحلي <span style="background:#e0f5f5;color:#0ea5e9;padding:1px 6px;border-radius:3px;font-size:8px;font-weight:600">GASTAT Q4-2025</span>',weight:'15%',color:'#3b82f6',desc:'يُحسب من بيانات GASTAT الفعلية (الربع الرابع 2025): نسبة توظيف السعوديين في القطاع المستهدف + متوسط الأجور القطاعية.',scale:'1 = قطاع <0.5% توظيف سعودي · 3 = قطاع 1-3% أو أجور >5,000 ر.س · 5 = قطاع >5% توظيف سعودي + أجور >10,000 ر.س'},
+{name:'ملاءمة العمل الحر',weight:'5%',color:'#334155',desc:'إمكانية العمل المستقل عبر منصة العمل الحر الوطنية (+140 مهنة) ومنصة بحر. مؤشر تكميلي.',scale:'1 = غير موجود في القائمة المعتمدة · 3 = في فئة الخدمات التخصصية · 5 = تخصصية + شهادات + طلب نشط'}
 ];
 document.getElementById('method-factors').innerHTML=mdiFactors.map(f=>`<div style="padding:12px 0;border-bottom:1px solid #f0f2f5">
 <div style="display:flex;align-items:center;gap:12px;margin-bottom:6px"><div style="min-width:42px;text-align:center;font-size:13px;font-weight:700;color:${f.color}">${f.weight}</div><div style="flex:1;font-size:13px;font-weight:600">${f.name}</div><div style="width:80px;height:6px;border-radius:3px;background:#e5e7eb;overflow:hidden"><div style="height:100%;width:${parseInt(f.weight)*2}%;background:${f.color};border-radius:3px"></div></div></div>
@@ -1013,9 +1149,9 @@ document.getElementById('method-factors').innerHTML=mdiFactors.map(f=>`<div styl
 
 // Methodology — SFS factors
 document.getElementById('method-sfs').innerHTML=[
-{name:'الاحتياجات من هيئة التدريب والإداريين والفنيين',weight:'40%',color:'#4e7d96',desc:'مدى توفر الكوادر المؤهلة في السوق: مدربون متخصصون، فنيون، وإداريون. يشمل تقييم المؤهل المطلوب (بكالوريوس/ماجستير/دكتوراه) ومدى ندرة التخصص.',scale:'1 = تخصص نادر يحتاج استقطاب دولي · 3 = متوفر بكفاءة معتدلة · 5 = متوفر بسهولة في السوق المحلي'},
-{name:'التجهيزات في المعامل والورش والمختبرات',weight:'35%',color:'#4e7d96',desc:'مدى تعقيد وتكلفة البنية التحتية المطلوبة: معامل، ورش، مختبرات، أجهزة متخصصة. البرامج التي تحتاج معمل حاسب فقط تختلف عن التي تحتاج ورش صناعية ثقيلة.',scale:'1 = ورش صناعية ثقيلة ومعدات مكلفة · 3 = معامل متخصصة بتكلفة معتدلة · 5 = معمل حاسب قياسي فقط'},
-{name:'سرعة التنفيذ المتوقعة',weight:'25%',color:'#4e7d96',desc:'الوقت اللازم لتجهيز البرنامج بالكامل وبدء القبول: يشمل إعداد المناهج، تأهيل المدربين، وتجهيز المرافق.',scale:'1 = أكثر من سنتين للتجهيز · 3 = سنة تقريباً · 5 = يمكن الإطلاق خلال فصل دراسي واحد'}
+{name:'الاحتياجات من هيئة التدريب والإداريين والفنيين',weight:'40%',color:'#3b82f6',desc:'مدى توفر الكوادر المؤهلة في السوق: مدربون متخصصون، فنيون، وإداريون. يشمل تقييم المؤهل المطلوب (بكالوريوس/ماجستير/دكتوراه) ومدى ندرة التخصص.',scale:'1 = تخصص نادر يحتاج استقطاب دولي · 3 = متوفر بكفاءة معتدلة · 5 = متوفر بسهولة في السوق المحلي'},
+{name:'التجهيزات في المعامل والورش والمختبرات',weight:'35%',color:'#3b82f6',desc:'مدى تعقيد وتكلفة البنية التحتية المطلوبة: معامل، ورش، مختبرات، أجهزة متخصصة. البرامج التي تحتاج معمل حاسب فقط تختلف عن التي تحتاج ورش صناعية ثقيلة.',scale:'1 = ورش صناعية ثقيلة ومعدات مكلفة · 3 = معامل متخصصة بتكلفة معتدلة · 5 = معمل حاسب قياسي فقط'},
+{name:'سرعة التنفيذ المتوقعة',weight:'25%',color:'#3b82f6',desc:'الوقت اللازم لتجهيز البرنامج بالكامل وبدء القبول: يشمل إعداد المناهج، تأهيل المدربين، وتجهيز المرافق.',scale:'1 = أكثر من سنتين للتجهيز · 3 = سنة تقريباً · 5 = يمكن الإطلاق خلال فصل دراسي واحد'}
 ].map(f=>`<div style="padding:12px 0;border-bottom:1px solid #f0f2f5">
 <div style="display:flex;align-items:center;gap:12px;margin-bottom:6px"><div style="min-width:42px;text-align:center;font-size:13px;font-weight:700;color:${f.color}">${f.weight}</div><div style="flex:1;font-size:13px;font-weight:600">${f.name}</div><div style="width:80px;height:6px;border-radius:3px;background:#e5e7eb;overflow:hidden"><div style="height:100%;width:${parseInt(f.weight)*2}%;background:${f.color};border-radius:3px"></div></div></div>
 <div style="margin-right:54px;font-size:11px;color:var(--text2);line-height:1.6">${f.desc}</div>
@@ -1027,7 +1163,7 @@ let sel=document.getElementById('program-select');
 sel.innerHTML=sorted.map(p=>`<option value="${p.id}">${p.name} (MDI ${p.mdi})</option>`).join('');
 function renderDetail(p){
 let qd=QUAD[p.quad]||QUAD.NO;
-let gateRow=(label,val)=>`<div style="flex:1;border-radius:10px;padding:1rem;border:1px solid ${val?'#0d737730':'#9b4d5a30'};background:${val?'#d0efef20':'#fce8ec20'}"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px"><span style="font-size:12px;font-weight:500">${label}</span><span style="font-size:18px;font-weight:700;color:${val?'#0d7377':'#9b4d5a'}">${val?'✓':'✗'}</span></div></div>`;
+let gateRow=(label,val)=>`<div style="flex:1;border-radius:10px;padding:1rem;border:1px solid ${val?'#0ea5e930':'#ef444430'};background:${val?'#e0f2fe20':'#fce8ec20'}"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px"><span style="font-size:12px;font-weight:500">${label}</span><span style="font-size:18px;font-weight:700;color:${val?'#0ea5e9':'#ef4444'}">${val?'✓':'✗'}</span></div></div>`;
 let fNames=['التوطين','طلب رؤية 2030','التوقعات العالمية','أولوية المجالس','السوق المحلي','العمل الحر'];
 let fRationale=[
 ['قرار توطين مباشر بنسبة محددة','قرار عام بدون نسبة','لا يوجد قرار واضح','—','—'],
@@ -1040,30 +1176,31 @@ let fRationale=[
 let fWeights=[25,25,15,15,15,5];
 document.getElementById('detail-card').innerHTML=`
 <div style="background:var(--bg);border-radius:12px;padding:1rem;margin-bottom:1rem"><div style="font-size:16px;font-weight:700">${p.name}</div><div style="font-size:12px;color:var(--text2);margin-top:2px">${p.dept} · ${p.council} · ${p.infra||'—'}</div></div>
-<div style="font-size:13px;font-weight:600;margin-bottom:8px;color:#0d7377">① مؤشرات الارتباط بالسياسات</div>
+<div style="font-size:13px;font-weight:600;margin-bottom:8px;color:#0ea5e9">① مؤشرات الارتباط بالسياسات</div>
 <div style="display:flex;gap:10px;margin-bottom:1.25rem">${gateRow('ارتباط رؤية 2030',p.gateV)}${gateRow('ارتباط التوطين',p.gateS)}</div>
-<div style="font-size:13px;font-weight:600;margin-bottom:8px;color:#0d7377">② عوامل الطلب — MDI</div>
+<div style="font-size:13px;font-weight:600;margin-bottom:8px;color:#0ea5e9">② عوامل الطلب — MDI</div>
 <div style="margin-bottom:1.25rem">${p.mdiFact.map((v,i)=>`<div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid #f3f5f8"><span style="min-width:32px;font-size:11px;color:var(--text3)">${fWeights[i]}%</span><span style="min-width:100px;font-size:12px;font-weight:500">${fNames[i]}</span><span style="flex:1;font-size:10.5px;color:var(--text3)">${fRationale[i][5-v]||'—'}</span><span style="display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:6px;font-size:12px;font-weight:600;background:${scoreBg(v)};color:${scoreColor(v)}">${v}</span></div>`).join('')}</div>
-<div style="font-size:13px;font-weight:600;margin-bottom:8px;color:#4e7d96">③ عوامل العرض — SFS</div>
-<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:1.25rem;text-align:center;font-size:12px">
-<div style="background:var(--bg);border-radius:8px;padding:8px"><div style="color:var(--text3);font-size:10px">المدربون</div><div style="font-weight:600;margin-top:2px">${p.trainers}</div></div>
-<div style="background:var(--bg);border-radius:8px;padding:8px"><div style="color:var(--text3);font-size:10px">أعلى مؤهل</div><div style="font-weight:600;margin-top:2px;font-size:11px">${p.maxQual}</div></div>
-<div style="background:var(--bg);border-radius:8px;padding:8px"><div style="color:var(--text3);font-size:10px">المعامل</div><div style="font-weight:600;margin-top:2px">${p.labs||'—'}</div></div>
-<div style="background:var(--bg);border-radius:8px;padding:8px"><div style="color:var(--text3);font-size:10px">التجهيزات</div><div style="font-weight:600;margin-top:2px">${p.equip||'—'}</div></div>
+<div style="font-size:13px;font-weight:600;margin-bottom:8px;color:${qd.color}">③ القرار النهائي — أولوية حسب MDI</div>
+<div style="display:flex;align-items:center;gap:16px;padding:1.5rem;border-radius:12px;border:2px solid ${qd.color}40;background:${qd.bg};margin-bottom:1.25rem">
+<div style="text-align:center;flex:1"><div style="font-size:10px;color:var(--text3);letter-spacing:1px;text-transform:uppercase">مؤشر الطلب</div><div style="font-size:38px;font-weight:800;color:${qd.color};line-height:1;margin:4px 0">${p.mdi}</div><div style="font-size:10px;color:var(--text3)">من 100</div></div>
+<div style="font-size:18px;color:var(--text3)">→</div>
+<div style="flex:1.5"><div style="font-size:11px;color:var(--text3);margin-bottom:4px">التصنيف</div><div style="font-size:18px;font-weight:700;color:${qd.color};margin-bottom:4px">${qd.ar}</div><div style="font-size:11px;color:var(--text2);line-height:1.6">${qd.desc} · ${qd.range}</div></div>
 </div>
-<div style="font-size:13px;font-weight:600;margin-bottom:8px;color:${qd.color}">④ القرار النهائي</div>
-<div style="display:flex;align-items:center;gap:16px;padding:1.25rem;border-radius:12px;border:2px solid ${qd.color}40;background:${qd.bg}">
-<div style="text-align:center"><div style="font-size:10px;color:var(--text3)">MDI</div><div style="font-size:24px;font-weight:800;color:#0d7377">${p.mdi}</div></div>
-<div style="font-size:18px;color:var(--text3)">×</div>
-<div style="text-align:center"><div style="font-size:10px;color:var(--text3)">SFS</div><div style="font-size:24px;font-weight:800;color:#4e7d96">${p.sfs||'—'}</div></div>
-<div style="font-size:18px;color:var(--text3)">=</div>
-<div><div style="font-size:15px;font-weight:700;color:${qd.color}">${qd.ar}</div></div>
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:6px;font-size:10px;text-align:center;margin-bottom:1.5rem">
+<div style="padding:8px 6px;border-radius:6px;background:#e0f2fe40;border:1px solid #0ea5e920;${p.quad==='T1'?'box-shadow:inset 0 0 0 2px #0ea5e9':''}"><div style="font-weight:700;color:#0ea5e9">T1 · أولوية عليا</div><div style="color:var(--text3);margin-top:2px">MDI ≥ 80</div></div>
+<div style="padding:8px 6px;border-radius:6px;background:#dbeafe40;border:1px solid #3b82f620;${p.quad==='T2'?'box-shadow:inset 0 0 0 2px #3b82f6':''}"><div style="font-weight:700;color:#3b82f6">T2 · أولوية عالية</div><div style="color:var(--text3);margin-top:2px">MDI 65–79</div></div>
+<div style="padding:8px 6px;border-radius:6px;background:#fef3c740;border:1px solid #f59e0b20;${p.quad==='T3'?'box-shadow:inset 0 0 0 2px #f59e0b':''}"><div style="font-weight:700;color:#f59e0b">T3 · متوسطة</div><div style="color:var(--text3);margin-top:2px">MDI 50–64</div></div>
+<div style="padding:8px 6px;border-radius:6px;background:#fee2e240;border:1px solid #ef444420;${p.quad==='T4'?'box-shadow:inset 0 0 0 2px #ef4444':''}"><div style="font-weight:700;color:#ef4444">T4 · منخفضة</div><div style="color:var(--text3);margin-top:2px">MDI &lt; 50</div></div>
 </div>
-<div style="margin-top:12px;display:grid;grid-template-columns:repeat(4,1fr);gap:6px;font-size:10px;text-align:center">
-<div style="padding:6px;border-radius:6px;background:#d0efef30;border:1px solid #0d737720"><div style="font-weight:700;color:#0d7377">Q1 إطلاق فوري</div><div style="color:var(--text3);margin-top:2px">MDI ≥ 65 و SFS ≥ 50</div></div>
-<div style="padding:6px;border-radius:6px;background:#e4eff630;border:1px solid #4e7d9620"><div style="font-weight:700;color:#4e7d96">Q2 استثمار</div><div style="color:var(--text3);margin-top:2px">MDI ≥ 65 و SFS &lt; 50</div></div>
-<div style="padding:6px;border-radius:6px;background:#e0fafa30;border:1px solid #1bc5c520"><div style="font-weight:700;color:#4e7d96">Q3 اختياري</div><div style="color:var(--text3);margin-top:2px">MDI &lt; 65 و SFS ≥ 50</div></div>
-<div style="padding:6px;border-radius:6px;background:#ededee30;border:1px solid #3a3a3c20"><div style="font-weight:700;color:#3a3a3c">Q4 منخفضة</div><div style="color:var(--text3);margin-top:2px">MDI &lt; 65 و SFS &lt; 50</div></div>
+
+<div style="font-size:13px;font-weight:600;margin-bottom:8px;color:#f59e0b">④ بيانات العرض — للمعلومية والتخطيط فقط</div>
+<div style="padding:10px 12px;border-radius:8px;background:#fef3c722;border:1px solid #f59e0b22;margin-bottom:10px;font-size:10.5px;color:#92400e;line-height:1.6">هذه المؤشرات لا تؤثر على ترتيب الأولوية — تُستخدم لتقدير الموارد المطلوبة وجدولة التنفيذ</div>
+<div style="display:grid;grid-template-columns:repeat(5,1fr);gap:8px;text-align:center;font-size:12px">
+<div style="background:var(--bg);border-radius:8px;padding:10px 6px"><div style="color:var(--text3);font-size:10px">SFS</div><div style="font-weight:700;margin-top:2px;color:#f59e0b">${p.sfs||'—'}</div></div>
+<div style="background:var(--bg);border-radius:8px;padding:10px 6px"><div style="color:var(--text3);font-size:10px">المدربون</div><div style="font-weight:600;margin-top:2px">${p.trainers}</div></div>
+<div style="background:var(--bg);border-radius:8px;padding:10px 6px"><div style="color:var(--text3);font-size:10px">أعلى مؤهل</div><div style="font-weight:600;margin-top:2px;font-size:10.5px">${p.maxQual}</div></div>
+<div style="background:var(--bg);border-radius:8px;padding:10px 6px"><div style="color:var(--text3);font-size:10px">المعامل</div><div style="font-weight:600;margin-top:2px">${p.labs||'—'}</div></div>
+<div style="background:var(--bg);border-radius:8px;padding:10px 6px"><div style="color:var(--text3);font-size:10px">التجهيزات</div><div style="font-weight:600;margin-top:2px">${p.equip||'—'}</div></div>
 </div>`;
 }
 sel.addEventListener('change',()=>{let p=PROGRAMS.find(p=>p.id===Number(sel.value));if(p)renderDetail(p)});
@@ -1075,7 +1212,7 @@ function sortOverviewTable(field){
 overviewSortDir[field]=!overviewSortDir[field];
 let dir=overviewSortDir[field]?-1:1;
 let s=[...PROGRAMS].sort((a,b)=>dir*(a[field]-b[field]));
-document.getElementById('main-table-body').innerHTML=s.slice(0,15).map((p,i)=>`<tr>
+let mtb2=document.getElementById('main-table-body');if(mtb2)mtb2.innerHTML=s.slice(0,15).map((p,i)=>`<tr>
 <td style="text-align:center;color:var(--text3)">${i+1}</td>
 <td style="font-weight:600">${p.name}</td>
 <td style="font-size:11px;color:var(--text2)">${p.dept}</td>
@@ -1086,12 +1223,20 @@ ${sfsBar(p.sfs)}
 <td>${pillHTML(p.quad)}</td>
 </tr>`).join('');
 }
+function goToDetail(pid){
+switchTabDirect('detail');
+setTimeout(()=>{
+let sel=document.getElementById('program-select');
+if(sel){sel.value=pid;sel.dispatchEvent(new Event('change'))}
+},150);
+}
 function switchTabDirect(id){
 document.querySelectorAll('.tab-content').forEach(el=>el.classList.remove('active'));
 document.getElementById('tab-'+id).classList.add('active');
 document.querySelectorAll('.nav > .nav-item').forEach(el=>el.classList.remove('active'));
 document.querySelectorAll('.nav > .nav-item').forEach(el=>{if(el.getAttribute('onclick')&&el.getAttribute('onclick').includes("'"+id+"'"))el.classList.add('active')});
 window.scrollTo(0,0);
+if(id==='methodology')setTimeout(drawWF,100);
 }
 function switchTab(id,el){
 document.querySelectorAll('.tab-content').forEach(t=>t.classList.remove('active'));
@@ -1100,6 +1245,7 @@ if(target) target.classList.add('active');
 document.querySelectorAll('.nav > .nav-item').forEach(n=>n.classList.remove('active'));
 if(el) el.classList.add('active');
 window.scrollTo(0,0);
+if(id==='methodology')setTimeout(drawWF,100);
 }
 
 // ═══ WORKFLOW SVG CONNECTIONS ═══
@@ -1134,18 +1280,18 @@ dot.appendChild(am);dot.appendChild(oa);sv.appendChild(dot);
 }
 function drawWF(){
 wfWire('wf-demand-flow','wf-d-svg',[
-{f:'wd1',t:'wf1',c:'#0d7377'},{f:'wd2',t:'wf2',c:'#0d7377'},
-{f:'wd3',t:'wf3',c:'#4e7d96'},
-{f:'wd4',t:'wf4',c:'#b8860b'},
-{f:'wd5',t:'wf5',c:'#0e8c8c'},{f:'wd6',t:'wf5',c:'#0e8c8c'},
-{f:'wd7',t:'wf6',c:'#6b8f6b'},
-{f:'wf1',t:'wf-mdi',c:'#2d8a4e'},{f:'wf2',t:'wf-mdi',c:'#2d8a4e'},
-{f:'wf3',t:'wf-mdi',c:'#2d8a4e'},{f:'wf4',t:'wf-mdi',c:'#2d8a4e'},
-{f:'wf5',t:'wf-mdi',c:'#2d8a4e'},{f:'wf6',t:'wf-mdi',c:'#2d8a4e'},
+{f:'wd1',t:'wf1',c:'#0ea5e9'},{f:'wd2',t:'wf2',c:'#0ea5e9'},
+{f:'wd3',t:'wf3',c:'#3b82f6'},
+{f:'wd4',t:'wf4',c:'#f59e0b'},
+{f:'wd5',t:'wf5',c:'#0ea5e9'},{f:'wd6',t:'wf5',c:'#0ea5e9'},
+{f:'wd7',t:'wf6',c:'#10b981'},
+{f:'wf1',t:'wf-mdi',c:'#10b981'},{f:'wf2',t:'wf-mdi',c:'#10b981'},
+{f:'wf3',t:'wf-mdi',c:'#10b981'},{f:'wf4',t:'wf-mdi',c:'#10b981'},
+{f:'wf5',t:'wf-mdi',c:'#10b981'},{f:'wf6',t:'wf-mdi',c:'#10b981'},
 ]);
 wfWire('wf-supply-flow','wf-s-svg',[
-{f:'ws1',t:'wsf1',c:'#4e7d96'},{f:'ws2',t:'wsf2',c:'#4e7d96'},{f:'ws3',t:'wsf3',c:'#4e7d96'},
-{f:'wsf1',t:'wf-sfs',c:'#2d8a4e'},{f:'wsf2',t:'wf-sfs',c:'#2d8a4e'},{f:'wsf3',t:'wf-sfs',c:'#2d8a4e'},
+{f:'ws1',t:'wsf1',c:'#3b82f6'},{f:'ws2',t:'wsf2',c:'#3b82f6'},{f:'ws3',t:'wsf3',c:'#3b82f6'},
+{f:'wsf1',t:'wf-sfs',c:'#10b981'},{f:'wsf2',t:'wf-sfs',c:'#10b981'},{f:'wsf3',t:'wf-sfs',c:'#10b981'},
 ]);
 }
 setTimeout(drawWF,800);
