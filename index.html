@@ -140,15 +140,15 @@ tr:hover td{background:#e0f2fe}
 
 <div class="nav">
 
-<!-- 1. المنهجية -->
-<div class="nav-item" onclick="switchTab('methodology',this)">
-<span class="nav-label">المنهجية</span>
-<svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 01-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
-</div>
-<!-- 2. لوحة المعلومات -->
+<!-- 1. لوحة المعلومات -->
 <div class="nav-item" onclick="switchTab('overview',this)">
 <span class="nav-label">لوحة المعلومات</span>
 <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="3" y="3" width="7.5" height="7.5" rx="1.5"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="1.5"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="1.5"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1.5"/></svg>
+</div>
+<!-- 2. المنهجية -->
+<div class="nav-item" onclick="switchTab('methodology',this)">
+<span class="nav-label">المنهجية</span>
+<svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 01-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
 </div>
 <!-- 3. ترتيب الأولويات -->
 <div class="nav-item" onclick="switchTab('matrix',this)">
@@ -250,7 +250,13 @@ tr:hover td{background:#e0f2fe}
 </div>
 </div>
 
+<!-- KPIs with title -->
+<div class="section" style="margin-bottom:1.25rem">
+<div class="section-head"><div class="section-title">المؤشرات الرئيسية</div></div>
+<div class="section-body" style="padding:1.25rem">
 <div class="kpi-row" id="kpi-row-dynamic"></div>
+</div>
+</div>
 
 
 
@@ -301,7 +307,7 @@ tr:hover td{background:#e0f2fe}
 <div class="section-sub">الأولوية تُحدَّد حصراً بناءً على مؤشر الطلب (MDI) · اضغط لعرض الترتيب الكامل</div>
 </div>
 <div class="section-body">
-<div style="display:flex;border-radius:8px;overflow:hidden;height:44px;margin-bottom:14px;cursor:pointer" id="tier-bar" onclick="switchTabDirect('matrix')"></div>
+<div style="display:flex;border-radius:10px;overflow:hidden;height:48px;margin-bottom:14px;cursor:pointer" id="tier-bar" onclick="switchTabDirect('matrix')"></div>
 <div style="display:flex;gap:20px;flex-wrap:wrap;font-size:12px" id="tier-legend"></div>
 </div>
 </div>
@@ -982,7 +988,7 @@ return `<div style="display:flex;align-items:center;gap:10px;padding:8px 10px;bo
 <span style="font-size:15px;font-weight:800;color:${t.color};font-variant-numeric:tabular-nums">${p.mdi}</span>
 </div>
 </div>
-<div style="position:relative;height:6px;background:rgba(0,0,0,.04);border-radius:3px;overflow:hidden">
+<div style="position:relative;height:8px;background:#f1f5f9;border-radius:4px;overflow:hidden">
 <div style="position:absolute;top:0;right:0;bottom:0;width:${pct}%;background:linear-gradient(90deg,${t.color}80,${t.color});border-radius:3px"></div>
 </div>
 </div>
@@ -1020,14 +1026,22 @@ let avgSFS=Math.round(withSFS.reduce((s,p)=>s+p.sfs,0)/withSFS.length);
 // Executive tier cards
 ['T1','T2','T3','T4'].forEach(k=>{let el=document.getElementById('ov-'+k.toLowerCase());if(el)el.textContent={T1:t1,T2:t2,T3:t3,T4:t4}[k].length});
 
+// Ring gauge helper (global)
+window.ringGauge=function ringGauge(val,max,color,size){
+let r=size/2-4,c=Math.PI*2*r,pct=val/max,offset=c*(1-pct);
+return `<svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}" style="transform:rotate(-90deg)"><circle cx="${size/2}" cy="${size/2}" r="${r}" fill="none" stroke="#e2e8f0" stroke-width="5"/><circle cx="${size/2}" cy="${size/2}" r="${r}" fill="none" stroke="${color}" stroke-width="5" stroke-dasharray="${c}" stroke-dashoffset="${offset}" stroke-linecap="round"/></svg>`;
+}
+
 document.getElementById('kpi-row-dynamic').innerHTML=[
-{l:'أولوية عليا + عالية',v:t1.length+t2.length,n:'برامج موصى بإطلاقها — MDI ≥ 65',c:'#0ea5e9',tab:'matrix'},
-{l:'متوسط الطلب MDI',v:avgMDI,n:'من 100 · عبر 43 برنامج',c:'#3b82f6',tab:'demand'},
-{l:'متوسط العرض SFS',v:avgSFS,n:'للمعلومية فقط · لا يؤثر على الترتيب',c:'#f59e0b',tab:'supply'},
-{l:'أعلى MDI',v:Math.max(...PROGRAMS.map(p=>p.mdi)),n:'أفضل برنامج مرشح',c:'#10b981',tab:'matrix'}
-].map((k,i)=>{
-let borders=['#0ea5e9','#3b82f6','#f59e0b','#10b981'];
-return `<div class="kpi" style="border-top-color:${borders[i]};cursor:pointer" onclick="switchTabDirect('${k.tab}')"><div class="kpi-label">${k.l}</div><div class="kpi-val" style="color:${k.c}">${k.v}</div><div class="kpi-note" style="font-size:10px;color:var(--text3);margin-top:4px">${k.n}</div></div>`
+{l:'أولوية عليا + عالية',v:t1.length+t2.length,max:43,n:'من 43 برنامج · MDI ≥ 65',c:'#0ea5e9',tab:'matrix'},
+{l:'متوسط الطلب MDI',v:avgMDI,max:100,n:'من 100 · عبر 43 برنامج',c:'#3b82f6',tab:'demand'},
+{l:'متوسط العرض SFS',v:avgSFS,max:100,n:'للمعلومية · لا يؤثر على الترتيب',c:'#f59e0b',tab:'supply'},
+{l:'أعلى MDI',v:Math.max(...PROGRAMS.map(p=>p.mdi)),max:100,n:'أفضل برنامج مرشح',c:'#10b981',tab:'matrix'}
+].map(k=>{
+return `<div style="background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:18px;cursor:pointer;transition:box-shadow .15s;display:flex;align-items:center;gap:16px" onclick="switchTabDirect('${k.tab}')" onmouseenter="this.style.boxShadow='0 2px 12px rgba(0,0,0,.06)'" onmouseleave="this.style.boxShadow=''">
+<div style="position:relative;width:56px;height:56px;flex-shrink:0">${ringGauge(k.v,k.max,k.c,56)}<div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;color:${k.c}">${k.v}</div></div>
+<div><div style="font-size:12px;font-weight:600;color:#0f172a;margin-bottom:3px">${k.l}</div><div style="font-size:10px;color:#94a3b8">${k.n}</div></div>
+</div>`
 }).join('');
 
 // ═══ OVERVIEW: Tier Distribution Bar ═══
@@ -1042,25 +1056,25 @@ let t=TIERS[k];
 return `<span style="display:flex;align-items:center;gap:6px"><span style="width:12px;height:12px;border-radius:3px;background:${t.color}"></span><span style="font-weight:600;color:${t.color}">${k}</span><span style="color:var(--text2)">${t.ar}</span><span style="color:var(--text3);font-size:10px">(${t.range})</span><span style="color:var(--text);font-weight:700">${tierCounts[k]}</span></span>`;
 }).join('');
 
-// ═══ OVERVIEW: Top 10 Programs ═══
+// ═══ OVERVIEW: Top 10 Programs with bar visualization ═══
 let top10=[...PROGRAMS].sort((a,b)=>b.mdi-a.mdi).slice(0,10);
 document.getElementById('top-programs').innerHTML=top10.map((p,i)=>{
 let t=TIERS[p.quad];
-return `<div style="display:flex;align-items:center;gap:12px;padding:10px 14px;border-radius:10px;background:${t.bg}55;border:1px solid ${t.color}20">
-<div style="min-width:28px;font-size:12px;font-weight:800;color:${t.color};text-align:center">${i+1}</div>
+return `<div style="display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:10px;background:#fff;border:1px solid #e2e8f0;cursor:pointer;transition:border-color .15s" onclick="goToDetail(${p.id})" onmouseenter="this.style.borderColor='${t.color}40'" onmouseleave="this.style.borderColor='#e2e8f0'">
+<div style="min-width:24px;font-size:12px;font-weight:800;color:#94a3b8;text-align:center">${i+1}</div>
 <div style="flex:1;min-width:0">
-<div style="font-size:12.5px;font-weight:600;color:var(--text);margin-bottom:2px">${p.name}</div>
-<div style="font-size:10px;color:var(--text3)">${p.dept} · ${p.council}</div>
+<div style="display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:4px">
+<div style="font-size:12px;font-weight:600;color:#0f172a;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${p.name}</div>
+<div style="font-size:14px;font-weight:800;color:${t.color};flex-shrink:0">${p.mdi}</div>
 </div>
-<div style="text-align:center;min-width:60px">
-<div style="font-size:18px;font-weight:800;color:${t.color};line-height:1">${p.mdi}</div>
-<div style="font-size:9px;color:var(--text3);margin-top:2px">MDI</div>
+<div style="position:relative;height:5px;background:#f1f5f9;border-radius:3px;overflow:hidden">
+<div style="position:absolute;top:0;right:0;bottom:0;width:${p.mdi}%;background:${t.color};border-radius:3px;opacity:.7"></div>
 </div>
-<div style="text-align:center;min-width:60px;opacity:.6">
-<div style="font-size:14px;font-weight:600;color:var(--text2);line-height:1">${p.sfs||'—'}</div>
-<div style="font-size:9px;color:var(--text3);margin-top:2px">SFS</div>
+<div style="display:flex;justify-content:space-between;margin-top:3px">
+<span style="font-size:9px;color:#94a3b8">${p.dept}</span>
+<span class="pill ${t.cls}" style="font-size:8px;padding:1px 6px">${t.ar}</span>
 </div>
-<span class="pill ${t.cls}" style="font-size:10px">${t.ar}</span>
+</div>
 </div>`;
 }).join('');
 
